@@ -1,2 +1,2 @@
-github "inamiy/ReactiveAutomaton" "swift/3.0"
+github "inamiy/ReactiveAutomaton" ~> 0.2.0
 github "inamiy/VTree" "master"

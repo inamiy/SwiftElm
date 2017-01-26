@@ -6,6 +6,21 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		1F72B0971E39EFC700168FEA /* MakePlayground */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 1F72B0981E39EFC700168FEA /* Build configuration list for PBXAggregateTarget "MakePlayground" */;
+			buildPhases = (
+				1F72B09D1E39EFE900168FEA /* Run Script: Code Generation (Sourcery) */,
+			);
+			dependencies = (
+				1F72B09C1E39EFE600168FEA /* PBXTargetDependency */,
+			);
+			name = MakePlayground;
+			productName = MakePlayground;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		1F2AE8611DF84E3800C8FE71 /* VTree.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FBFDA8D1DE5288900094059 /* VTree.framework */; };
 		1F2AE8631DF84E7200C8FE71 /* VTree.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FBFDA8D1DE5288900094059 /* VTree.framework */; };
@@ -17,6 +32,7 @@
 		1FCE01ED1DF8509900B3B30E /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FCE01EC1DF8509900B3B30E /* Result.framework */; };
 		1FCE01EE1DF850DE00B3B30E /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FCE01EC1DF8509900B3B30E /* Result.framework */; };
 		1FCE01EF1DF850E100B3B30E /* ReactiveSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FCE01EA1DF8509500B3B30E /* ReactiveSwift.framework */; };
+		1FF487761E3A07C4006D0383 /* Effect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF487751E3A07C4006D0383 /* Effect.swift */; };
 		48C1FC5B1DE45DB700660F74 /* SwiftElm.h in Headers */ = {isa = PBXBuildFile; fileRef = 48C1FC591DE45DB700660F74 /* SwiftElm.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		48C1FC681DE45DD900660F74 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C1FC671DE45DD900660F74 /* AppDelegate.swift */; };
 		48C1FC6F1DE45DD900660F74 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48C1FC6E1DE45DD900660F74 /* Assets.xcassets */; };
@@ -27,6 +43,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		1F72B09B1E39EFE600168FEA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 48C1FC4D1DE45DB700660F74 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 48C1FC551DE45DB700660F74;
+			remoteInfo = SwiftElm;
+		};
 		48C1FC911DE460AC00660F74 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 48C1FC4D1DE45DB700660F74 /* Project object */;
@@ -53,10 +76,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1F72B0921E39EB2B00168FEA /* SwiftElm.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = SwiftElm.playground; sourceTree = "<group>"; };
 		1FBFDA8A1DE5288200094059 /* ReactiveAutomaton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ReactiveAutomaton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FBFDA8D1DE5288900094059 /* VTree.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = VTree.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FCE01EA1DF8509500B3B30E /* ReactiveSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ReactiveSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FCE01EC1DF8509900B3B30E /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Result.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FF487751E3A07C4006D0383 /* Effect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Effect.swift; sourceTree = "<group>"; };
 		48C1FC561DE45DB700660F74 /* SwiftElm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftElm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		48C1FC591DE45DB700660F74 /* SwiftElm.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftElm.h; sourceTree = "<group>"; };
 		48C1FC5A1DE45DB700660F74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -98,6 +123,7 @@
 		48C1FC4C1DE45DB700660F74 = {
 			isa = PBXGroup;
 			children = (
+				1F72B0921E39EB2B00168FEA /* SwiftElm.playground */,
 				48C1FC581DE45DB700660F74 /* Sources */,
 				48C1FC661DE45DD900660F74 /* Demo */,
 				48C1FC571DE45DB700660F74 /* Products */,
@@ -119,6 +145,7 @@
 			children = (
 				48C1FC591DE45DB700660F74 /* SwiftElm.h */,
 				48C1FC951DE4616A00660F74 /* Program.swift */,
+				1FF487751E3A07C4006D0383 /* Effect.swift */,
 				48C1FC5A1DE45DB700660F74 /* Info.plist */,
 			);
 			path = Sources;
@@ -207,6 +234,10 @@
 				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = "Yasuhiro Inami";
 				TargetAttributes = {
+					1F72B0971E39EFC700168FEA = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
 					48C1FC551DE45DB700660F74 = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = UMBZ5WL247;
@@ -235,6 +266,7 @@
 			targets = (
 				48C1FC551DE45DB700660F74 /* SwiftElm */,
 				48C1FC641DE45DD900660F74 /* SwiftElmDemo */,
+				1F72B0971E39EFC700168FEA /* MakePlayground */,
 			);
 		};
 /* End PBXProject section */
@@ -258,11 +290,29 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1F72B09D1E39EFE900168FEA /* Run Script: Code Generation (Sourcery) */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script: Code Generation (Sourcery)";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Scripts/make-playground.sh";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		48C1FC511DE45DB700660F74 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FF487761E3A07C4006D0383 /* Effect.swift in Sources */,
 				48C1FC961DE4616A00660F74 /* Program.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -278,6 +328,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		1F72B09C1E39EFE600168FEA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 48C1FC551DE45DB700660F74 /* SwiftElm */;
+			targetProxy = 1F72B09B1E39EFE600168FEA /* PBXContainerItemProxy */;
+		};
 		48C1FC921DE460AC00660F74 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 48C1FC551DE45DB700660F74 /* SwiftElm */;
@@ -297,6 +352,20 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		1F72B0991E39EFC700168FEA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1F72B09A1E39EFC700168FEA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		48C1FC5C1DE45DB700660F74 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -468,6 +537,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		1F72B0981E39EFC700168FEA /* Build configuration list for PBXAggregateTarget "MakePlayground" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F72B0991E39EFC700168FEA /* Debug */,
+				1F72B09A1E39EFC700168FEA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		48C1FC501DE45DB700660F74 /* Build configuration list for PBXProject "SwiftElm" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

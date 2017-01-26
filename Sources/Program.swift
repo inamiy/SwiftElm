@@ -7,9 +7,6 @@ import VTree
 /// Wrapper of `VTree`, `Automaton`, and Reactive renderer.
 public final class Program<Model, Msg: Message>
 {
-    /// Mixture of Elm's `Task`, `Cmd`, `Sub`.
-    public typealias Effect = SignalProducer<Msg, NoError>
-
     private typealias _Automaton = ReactiveAutomaton.Automaton<Model, Msg>
 
     public let rootViewController = UIViewController()
@@ -28,7 +25,7 @@ public final class Program<Model, Msg: Message>
     }
 
     /// Non-beginner Program.
-    public init<T: VTree>(initial: (Model, Effect), update: @escaping _Automaton.NextMapping, view: @escaping (Model) -> T)
+    public init<T: VTree>(initial: (Model, Effect<Msg>), update: @escaping _Automaton.NextMapping, view: @escaping (Model) -> T)
         where T.MsgType == Msg
     {
         let (inputSignal, inputObserver) = Signal<Msg, NoError>.pipe()

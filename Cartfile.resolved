@@ -1,4 +1,4 @@
 github "antitypical/Result" "3.1.0"
-github "inamiy/VTree" "615dc3fadc590c06c637dd90575bd99f0a9bd495"
-github "ReactiveCocoa/ReactiveSwift" "90308457b2928c38fd8ab90ab073f217e6560030"
-github "inamiy/ReactiveAutomaton" "b193cca336fa2f60312df3fcce92ff885a8a93f8"
+github "inamiy/VTree" "8c0d9c4cbb1ad4dda61b3b912a76ad12490e1e8b"
+github "ReactiveCocoa/ReactiveSwift" "1.0.0"
+github "inamiy/ReactiveAutomaton" "0.2.0"
