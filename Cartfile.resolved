@@ -1,4 +1,5 @@
+github "inamiy/Flexbox" "08cad680d2a73bf8f0f71c12714ca177878d23d2"
 github "antitypical/Result" "3.1.0"
-github "inamiy/VTree" "8c0d9c4cbb1ad4dda61b3b912a76ad12490e1e8b"
-github "ReactiveCocoa/ReactiveSwift" "1.0.0"
+github "ReactiveCocoa/ReactiveSwift" "1.0.1"
+github "inamiy/VTree" "e1250320d7447c56ef04c931606b0bc82cf81db3"
 github "inamiy/ReactiveAutomaton" "0.2.0"

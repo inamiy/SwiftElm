@@ -6,33 +6,57 @@
 	objectVersion = 46;
 	objects = {
 
-/* Begin PBXAggregateTarget section */
-		1F72B0971E39EFC700168FEA /* MakePlayground */ = {
-			isa = PBXAggregateTarget;
-			buildConfigurationList = 1F72B0981E39EFC700168FEA /* Build configuration list for PBXAggregateTarget "MakePlayground" */;
-			buildPhases = (
-				1F72B09D1E39EFE900168FEA /* Run Script: Code Generation (Sourcery) */,
-			);
-			dependencies = (
-				1F72B09C1E39EFE600168FEA /* PBXTargetDependency */,
-			);
-			name = MakePlayground;
-			productName = MakePlayground;
-		};
-/* End PBXAggregateTarget section */
-
 /* Begin PBXBuildFile section */
 		1F2AE8611DF84E3800C8FE71 /* VTree.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FBFDA8D1DE5288900094059 /* VTree.framework */; };
 		1F2AE8631DF84E7200C8FE71 /* VTree.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FBFDA8D1DE5288900094059 /* VTree.framework */; };
 		1F2AE8641DF84E7200C8FE71 /* VTree.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1FBFDA8D1DE5288900094059 /* VTree.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1F315B171E625C0700DB6FC0 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FCE01EC1DF8509900B3B30E /* Result.framework */; };
+		1F315B181E625C0700DB6FC0 /* Result.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1FCE01EC1DF8509900B3B30E /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1F42668E1E626EA6003B739E /* Gesture+Debug.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F42668D1E626EA6003B739E /* Gesture+Debug.swift */; };
+		1F7E8B9F1E6272AD0083EF52 /* VTree.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FBFDA8D1DE5288900094059 /* VTree.framework */; };
+		1F7E8BA01E6272AD0083EF52 /* SwiftElm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48C1FC561DE45DB700660F74 /* SwiftElm.framework */; };
+		1F7E8BA11E6272AD0083EF52 /* ReactiveSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FCE01EA1DF8509500B3B30E /* ReactiveSwift.framework */; };
+		1F7E8BA21E6272AD0083EF52 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FCE01EC1DF8509900B3B30E /* Result.framework */; };
+		1F7E8BA31E6272AD0083EF52 /* ReactiveAutomaton.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FBFDA8A1DE5288200094059 /* ReactiveAutomaton.framework */; };
+		1F7E8BA81E6272AD0083EF52 /* ReactiveAutomaton.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1FBFDA8A1DE5288200094059 /* ReactiveAutomaton.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1F7E8BA91E6272AD0083EF52 /* SwiftElm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 48C1FC561DE45DB700660F74 /* SwiftElm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1F7E8BAA1E6272AD0083EF52 /* ReactiveSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1FCE01EA1DF8509500B3B30E /* ReactiveSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1F7E8BAB1E6272AD0083EF52 /* Result.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1FCE01EC1DF8509900B3B30E /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1F7E8BAC1E6272AD0083EF52 /* VTree.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1FBFDA8D1DE5288900094059 /* VTree.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1F7E8BAD1E6272AD0083EF52 /* Flexbox.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1FFE736D1E59CDEA00F751A3 /* Flexbox.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1F7E8BB91E6272D10083EF52 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7E8BB41E6272D10083EF52 /* AppDelegate.swift */; };
+		1F7E8BBA1E6272D10083EF52 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F7E8BB51E6272D10083EF52 /* Assets.xcassets */; };
+		1F7E8BBB1E6272D10083EF52 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F7E8BB61E6272D10083EF52 /* LaunchScreen.storyboard */; };
 		1FBFDA8B1DE5288200094059 /* ReactiveAutomaton.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FBFDA8A1DE5288200094059 /* ReactiveAutomaton.framework */; };
 		1FBFDA8C1DE5288200094059 /* ReactiveAutomaton.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1FBFDA8A1DE5288200094059 /* ReactiveAutomaton.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1FBFDA981DE528B200094059 /* ReactiveAutomaton.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FBFDA8A1DE5288200094059 /* ReactiveAutomaton.framework */; };
 		1FCE01EB1DF8509500B3B30E /* ReactiveSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FCE01EA1DF8509500B3B30E /* ReactiveSwift.framework */; };
 		1FCE01ED1DF8509900B3B30E /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FCE01EC1DF8509900B3B30E /* Result.framework */; };
-		1FCE01EE1DF850DE00B3B30E /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FCE01EC1DF8509900B3B30E /* Result.framework */; };
 		1FCE01EF1DF850E100B3B30E /* ReactiveSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FCE01EA1DF8509500B3B30E /* ReactiveSwift.framework */; };
 		1FF487761E3A07C4006D0383 /* Effect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF487751E3A07C4006D0383 /* Effect.swift */; };
+		1FF5ADAF1E62737D00E878A8 /* Message.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF5ADAD1E62737D00E878A8 /* Message.generated.swift */; };
+		1FF5ADB01E62737D00E878A8 /* MessageContext.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF5ADAE1E62737D00E878A8 /* MessageContext.generated.swift */; };
+		1FF5ADBA1E62749400E878A8 /* VTree.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FBFDA8D1DE5288900094059 /* VTree.framework */; };
+		1FF5ADBB1E62749400E878A8 /* SwiftElm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48C1FC561DE45DB700660F74 /* SwiftElm.framework */; };
+		1FF5ADBC1E62749400E878A8 /* ReactiveSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FCE01EA1DF8509500B3B30E /* ReactiveSwift.framework */; };
+		1FF5ADBD1E62749400E878A8 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FCE01EC1DF8509900B3B30E /* Result.framework */; };
+		1FF5ADBE1E62749400E878A8 /* ReactiveAutomaton.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FBFDA8A1DE5288200094059 /* ReactiveAutomaton.framework */; };
+		1FF5ADC31E62749400E878A8 /* ReactiveAutomaton.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1FBFDA8A1DE5288200094059 /* ReactiveAutomaton.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1FF5ADC41E62749400E878A8 /* SwiftElm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 48C1FC561DE45DB700660F74 /* SwiftElm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1FF5ADC51E62749400E878A8 /* ReactiveSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1FCE01EA1DF8509500B3B30E /* ReactiveSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1FF5ADC61E62749400E878A8 /* Result.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1FCE01EC1DF8509900B3B30E /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1FF5ADC71E62749400E878A8 /* VTree.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1FBFDA8D1DE5288900094059 /* VTree.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1FF5ADC81E62749400E878A8 /* Flexbox.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1FFE736D1E59CDEA00F751A3 /* Flexbox.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1FF5ADD71E6274B800E878A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF5ADCF1E6274B800E878A8 /* AppDelegate.swift */; };
+		1FF5ADD81E6274B800E878A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FF5ADD01E6274B800E878A8 /* Assets.xcassets */; };
+		1FF5ADD91E6274B800E878A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FF5ADD11E6274B800E878A8 /* LaunchScreen.storyboard */; };
+		1FF5ADDA1E6274B800E878A8 /* Message.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF5ADD41E6274B800E878A8 /* Message.generated.swift */; };
+		1FF5ADDB1E6274B800E878A8 /* MessageContext.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF5ADD51E6274B800E878A8 /* MessageContext.generated.swift */; };
+		1FFE736E1E59CDEA00F751A3 /* Flexbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FFE736D1E59CDEA00F751A3 /* Flexbox.framework */; };
+		1FFE73741E59CE5200F751A3 /* ReactiveSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1FCE01EA1DF8509500B3B30E /* ReactiveSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1FFE73761E59CEB300F751A3 /* Flexbox.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1FFE736D1E59CDEA00F751A3 /* Flexbox.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1FFE737B1E59CFB900F751A3 /* Message.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FFE73791E59CFB900F751A3 /* Message.generated.swift */; };
+		1FFE737C1E59CFB900F751A3 /* MessageContext.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FFE737A1E59CFB900F751A3 /* MessageContext.generated.swift */; };
 		48C1FC5B1DE45DB700660F74 /* SwiftElm.h in Headers */ = {isa = PBXBuildFile; fileRef = 48C1FC591DE45DB700660F74 /* SwiftElm.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		48C1FC681DE45DD900660F74 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C1FC671DE45DD900660F74 /* AppDelegate.swift */; };
 		48C1FC6F1DE45DD900660F74 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48C1FC6E1DE45DD900660F74 /* Assets.xcassets */; };
@@ -43,7 +67,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		1F72B09B1E39EFE600168FEA /* PBXContainerItemProxy */ = {
+		1F7E8B971E6272AD0083EF52 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 48C1FC4D1DE45DB700660F74 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 48C1FC551DE45DB700660F74;
+			remoteInfo = SwiftElm;
+		};
+		1FF5ADB31E62749400E878A8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 48C1FC4D1DE45DB700660F74 /* Project object */;
 			proxyType = 1;
@@ -60,6 +91,38 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		1F7E8BA71E6272AD0083EF52 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				1F7E8BA81E6272AD0083EF52 /* ReactiveAutomaton.framework in Embed Frameworks */,
+				1F7E8BA91E6272AD0083EF52 /* SwiftElm.framework in Embed Frameworks */,
+				1F7E8BAA1E6272AD0083EF52 /* ReactiveSwift.framework in Embed Frameworks */,
+				1F7E8BAB1E6272AD0083EF52 /* Result.framework in Embed Frameworks */,
+				1F7E8BAC1E6272AD0083EF52 /* VTree.framework in Embed Frameworks */,
+				1F7E8BAD1E6272AD0083EF52 /* Flexbox.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1FF5ADC21E62749400E878A8 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				1FF5ADC31E62749400E878A8 /* ReactiveAutomaton.framework in Embed Frameworks */,
+				1FF5ADC41E62749400E878A8 /* SwiftElm.framework in Embed Frameworks */,
+				1FF5ADC51E62749400E878A8 /* ReactiveSwift.framework in Embed Frameworks */,
+				1FF5ADC61E62749400E878A8 /* Result.framework in Embed Frameworks */,
+				1FF5ADC71E62749400E878A8 /* VTree.framework in Embed Frameworks */,
+				1FF5ADC81E62749400E878A8 /* Flexbox.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		48C1FC841DE4607800660F74 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -68,7 +131,10 @@
 			files = (
 				1FBFDA8C1DE5288200094059 /* ReactiveAutomaton.framework in Embed Frameworks */,
 				48C1FC901DE460AC00660F74 /* SwiftElm.framework in Embed Frameworks */,
+				1FFE73741E59CE5200F751A3 /* ReactiveSwift.framework in Embed Frameworks */,
+				1F315B181E625C0700DB6FC0 /* Result.framework in Embed Frameworks */,
 				1F2AE8641DF84E7200C8FE71 /* VTree.framework in Embed Frameworks */,
+				1FFE73761E59CEB300F751A3 /* Flexbox.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -76,16 +142,33 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		1F72B0921E39EB2B00168FEA /* SwiftElm.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = SwiftElm.playground; sourceTree = "<group>"; };
+		1F42668D1E626EA6003B739E /* Gesture+Debug.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Gesture+Debug.swift"; sourceTree = "<group>"; };
+		1F7E8BB11E6272AD0083EF52 /* SimpleDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F7E8BB41E6272D10083EF52 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1F7E8BB51E6272D10083EF52 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1F7E8BB71E6272D10083EF52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1F7E8BB81E6272D10083EF52 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1FBFDA8A1DE5288200094059 /* ReactiveAutomaton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ReactiveAutomaton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FBFDA8D1DE5288900094059 /* VTree.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = VTree.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FCE01EA1DF8509500B3B30E /* ReactiveSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ReactiveSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FCE01EC1DF8509900B3B30E /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Result.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FF487751E3A07C4006D0383 /* Effect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Effect.swift; sourceTree = "<group>"; };
+		1FF5ADAD1E62737D00E878A8 /* Message.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.generated.swift; sourceTree = "<group>"; };
+		1FF5ADAE1E62737D00E878A8 /* MessageContext.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageContext.generated.swift; sourceTree = "<group>"; };
+		1FF5ADCC1E62749400E878A8 /* SimpleFlexboxDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleFlexboxDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FF5ADCF1E6274B800E878A8 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1FF5ADD01E6274B800E878A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1FF5ADD21E6274B800E878A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1FF5ADD41E6274B800E878A8 /* Message.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.generated.swift; sourceTree = "<group>"; };
+		1FF5ADD51E6274B800E878A8 /* MessageContext.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageContext.generated.swift; sourceTree = "<group>"; };
+		1FF5ADD61E6274B800E878A8 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1FFE736D1E59CDEA00F751A3 /* Flexbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Flexbox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FFE73791E59CFB900F751A3 /* Message.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.generated.swift; sourceTree = "<group>"; };
+		1FFE737A1E59CFB900F751A3 /* MessageContext.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageContext.generated.swift; sourceTree = "<group>"; };
 		48C1FC561DE45DB700660F74 /* SwiftElm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftElm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		48C1FC591DE45DB700660F74 /* SwiftElm.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftElm.h; sourceTree = "<group>"; };
 		48C1FC5A1DE45DB700660F74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		48C1FC651DE45DD900660F74 /* SwiftElmDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftElmDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		48C1FC651DE45DD900660F74 /* GestureDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GestureDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48C1FC671DE45DD900660F74 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		48C1FC6E1DE45DD900660F74 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		48C1FC711DE45DD900660F74 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -94,6 +177,30 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		1F7E8B9E1E6272AD0083EF52 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F7E8B9F1E6272AD0083EF52 /* VTree.framework in Frameworks */,
+				1F7E8BA01E6272AD0083EF52 /* SwiftElm.framework in Frameworks */,
+				1F7E8BA11E6272AD0083EF52 /* ReactiveSwift.framework in Frameworks */,
+				1F7E8BA21E6272AD0083EF52 /* Result.framework in Frameworks */,
+				1F7E8BA31E6272AD0083EF52 /* ReactiveAutomaton.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1FF5ADB91E62749400E878A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FF5ADBA1E62749400E878A8 /* VTree.framework in Frameworks */,
+				1FF5ADBB1E62749400E878A8 /* SwiftElm.framework in Frameworks */,
+				1FF5ADBC1E62749400E878A8 /* ReactiveSwift.framework in Frameworks */,
+				1FF5ADBD1E62749400E878A8 /* Result.framework in Frameworks */,
+				1FF5ADBE1E62749400E878A8 /* ReactiveAutomaton.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		48C1FC521DE45DB700660F74 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -102,6 +209,7 @@
 				1FCE01EB1DF8509500B3B30E /* ReactiveSwift.framework in Frameworks */,
 				1FBFDA981DE528B200094059 /* ReactiveAutomaton.framework in Frameworks */,
 				1F2AE8611DF84E3800C8FE71 /* VTree.framework in Frameworks */,
+				1FFE736E1E59CDEA00F751A3 /* Flexbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,20 +220,80 @@
 				1F2AE8631DF84E7200C8FE71 /* VTree.framework in Frameworks */,
 				48C1FC8F1DE460AC00660F74 /* SwiftElm.framework in Frameworks */,
 				1FCE01EF1DF850E100B3B30E /* ReactiveSwift.framework in Frameworks */,
+				1F315B171E625C0700DB6FC0 /* Result.framework in Frameworks */,
 				1FBFDA8B1DE5288200094059 /* ReactiveAutomaton.framework in Frameworks */,
-				1FCE01EE1DF850DE00B3B30E /* Result.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F42668F1E626F4E003B739E /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				1F7E8BB31E6272D10083EF52 /* SimpleDemo */,
+				1FF5ADCE1E6274B800E878A8 /* SimpleFlexboxDemo */,
+				48C1FC661DE45DD900660F74 /* GestureDemo */,
+			);
+			path = Demo;
+			sourceTree = "<group>";
+		};
+		1F7E8BB31E6272D10083EF52 /* SimpleDemo */ = {
+			isa = PBXGroup;
+			children = (
+				1FF5ADAC1E62737D00E878A8 /* CodeGenerated */,
+				1F7E8BB41E6272D10083EF52 /* AppDelegate.swift */,
+				1F7E8BB51E6272D10083EF52 /* Assets.xcassets */,
+				1F7E8BB61E6272D10083EF52 /* LaunchScreen.storyboard */,
+				1F7E8BB81E6272D10083EF52 /* Info.plist */,
+			);
+			path = SimpleDemo;
+			sourceTree = "<group>";
+		};
+		1FF5ADAC1E62737D00E878A8 /* CodeGenerated */ = {
+			isa = PBXGroup;
+			children = (
+				1FF5ADAD1E62737D00E878A8 /* Message.generated.swift */,
+				1FF5ADAE1E62737D00E878A8 /* MessageContext.generated.swift */,
+			);
+			path = CodeGenerated;
+			sourceTree = "<group>";
+		};
+		1FF5ADCE1E6274B800E878A8 /* SimpleFlexboxDemo */ = {
+			isa = PBXGroup;
+			children = (
+				1FF5ADD31E6274B800E878A8 /* CodeGenerated */,
+				1FF5ADCF1E6274B800E878A8 /* AppDelegate.swift */,
+				1FF5ADD01E6274B800E878A8 /* Assets.xcassets */,
+				1FF5ADD11E6274B800E878A8 /* LaunchScreen.storyboard */,
+				1FF5ADD61E6274B800E878A8 /* Info.plist */,
+			);
+			path = SimpleFlexboxDemo;
+			sourceTree = "<group>";
+		};
+		1FF5ADD31E6274B800E878A8 /* CodeGenerated */ = {
+			isa = PBXGroup;
+			children = (
+				1FF5ADD41E6274B800E878A8 /* Message.generated.swift */,
+				1FF5ADD51E6274B800E878A8 /* MessageContext.generated.swift */,
+			);
+			path = CodeGenerated;
+			sourceTree = "<group>";
+		};
+		1FFE73781E59CFB900F751A3 /* CodeGenerated */ = {
+			isa = PBXGroup;
+			children = (
+				1FFE73791E59CFB900F751A3 /* Message.generated.swift */,
+				1FFE737A1E59CFB900F751A3 /* MessageContext.generated.swift */,
+			);
+			path = CodeGenerated;
+			sourceTree = "<group>";
+		};
 		48C1FC4C1DE45DB700660F74 = {
 			isa = PBXGroup;
 			children = (
-				1F72B0921E39EB2B00168FEA /* SwiftElm.playground */,
 				48C1FC581DE45DB700660F74 /* Sources */,
-				48C1FC661DE45DD900660F74 /* Demo */,
+				1F42668F1E626F4E003B739E /* Demo */,
 				48C1FC571DE45DB700660F74 /* Products */,
 				48C1FC771DE45F4D00660F74 /* Frameworks */,
 			);
@@ -135,7 +303,9 @@
 			isa = PBXGroup;
 			children = (
 				48C1FC561DE45DB700660F74 /* SwiftElm.framework */,
-				48C1FC651DE45DD900660F74 /* SwiftElmDemo.app */,
+				48C1FC651DE45DD900660F74 /* GestureDemo.app */,
+				1F7E8BB11E6272AD0083EF52 /* SimpleDemo.app */,
+				1FF5ADCC1E62749400E878A8 /* SimpleFlexboxDemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -151,20 +321,23 @@
 			path = Sources;
 			sourceTree = "<group>";
 		};
-		48C1FC661DE45DD900660F74 /* Demo */ = {
+		48C1FC661DE45DD900660F74 /* GestureDemo */ = {
 			isa = PBXGroup;
 			children = (
+				1FFE73781E59CFB900F751A3 /* CodeGenerated */,
 				48C1FC671DE45DD900660F74 /* AppDelegate.swift */,
+				1F42668D1E626EA6003B739E /* Gesture+Debug.swift */,
 				48C1FC6E1DE45DD900660F74 /* Assets.xcassets */,
 				48C1FC701DE45DD900660F74 /* LaunchScreen.storyboard */,
 				48C1FC731DE45DD900660F74 /* Info.plist */,
 			);
-			path = Demo;
+			path = GestureDemo;
 			sourceTree = "<group>";
 		};
 		48C1FC771DE45F4D00660F74 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1FFE736D1E59CDEA00F751A3 /* Flexbox.framework */,
 				1FCE01EC1DF8509900B3B30E /* Result.framework */,
 				1FCE01EA1DF8509500B3B30E /* ReactiveSwift.framework */,
 				1FBFDA8A1DE5288200094059 /* ReactiveAutomaton.framework */,
@@ -187,6 +360,46 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		1F7E8B951E6272AD0083EF52 /* SimpleDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F7E8BAE1E6272AD0083EF52 /* Build configuration list for PBXNativeTarget "SimpleDemo" */;
+			buildPhases = (
+				1F7E8B981E6272AD0083EF52 /* Run Script: VTree generate-message.sh */,
+				1F7E8B991E6272AD0083EF52 /* Sources */,
+				1F7E8B9E1E6272AD0083EF52 /* Frameworks */,
+				1F7E8BA41E6272AD0083EF52 /* Resources */,
+				1F7E8BA71E6272AD0083EF52 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1F7E8B961E6272AD0083EF52 /* PBXTargetDependency */,
+			);
+			name = SimpleDemo;
+			productName = SwiftElmDemo;
+			productReference = 1F7E8BB11E6272AD0083EF52 /* SimpleDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1FF5ADB11E62749400E878A8 /* SimpleFlexboxDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1FF5ADC91E62749400E878A8 /* Build configuration list for PBXNativeTarget "SimpleFlexboxDemo" */;
+			buildPhases = (
+				1FF5ADB41E62749400E878A8 /* Run Script: VTree generate-message.sh */,
+				1FF5ADB51E62749400E878A8 /* Sources */,
+				1FF5ADB91E62749400E878A8 /* Frameworks */,
+				1FF5ADBF1E62749400E878A8 /* Resources */,
+				1FF5ADC21E62749400E878A8 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1FF5ADB21E62749400E878A8 /* PBXTargetDependency */,
+			);
+			name = SimpleFlexboxDemo;
+			productName = SwiftElmDemo;
+			productReference = 1FF5ADCC1E62749400E878A8 /* SimpleFlexboxDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
 		48C1FC551DE45DB700660F74 /* SwiftElm */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 48C1FC5E1DE45DB700660F74 /* Build configuration list for PBXNativeTarget "SwiftElm" */;
@@ -205,10 +418,11 @@
 			productReference = 48C1FC561DE45DB700660F74 /* SwiftElm.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		48C1FC641DE45DD900660F74 /* SwiftElmDemo */ = {
+		48C1FC641DE45DD900660F74 /* GestureDemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 48C1FC741DE45DD900660F74 /* Build configuration list for PBXNativeTarget "SwiftElmDemo" */;
+			buildConfigurationList = 48C1FC741DE45DD900660F74 /* Build configuration list for PBXNativeTarget "GestureDemo" */;
 			buildPhases = (
+				1FFE73771E59CF1800F751A3 /* Run Script: VTree generate-message.sh */,
 				48C1FC611DE45DD900660F74 /* Sources */,
 				48C1FC621DE45DD900660F74 /* Frameworks */,
 				48C1FC631DE45DD900660F74 /* Resources */,
@@ -219,9 +433,9 @@
 			dependencies = (
 				48C1FC921DE460AC00660F74 /* PBXTargetDependency */,
 			);
-			name = SwiftElmDemo;
+			name = GestureDemo;
 			productName = SwiftElmDemo;
-			productReference = 48C1FC651DE45DD900660F74 /* SwiftElmDemo.app */;
+			productReference = 48C1FC651DE45DD900660F74 /* GestureDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -231,12 +445,14 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0810;
-				LastUpgradeCheck = 0810;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Yasuhiro Inami";
 				TargetAttributes = {
-					1F72B0971E39EFC700168FEA = {
-						CreatedOnToolsVersion = 8.2.1;
-						ProvisioningStyle = Automatic;
+					1F7E8B951E6272AD0083EF52 = {
+						DevelopmentTeam = UMBZ5WL247;
+					};
+					1FF5ADB11E62749400E878A8 = {
+						DevelopmentTeam = UMBZ5WL247;
 					};
 					48C1FC551DE45DB700660F74 = {
 						CreatedOnToolsVersion = 8.1;
@@ -265,13 +481,32 @@
 			projectRoot = "";
 			targets = (
 				48C1FC551DE45DB700660F74 /* SwiftElm */,
-				48C1FC641DE45DD900660F74 /* SwiftElmDemo */,
-				1F72B0971E39EFC700168FEA /* MakePlayground */,
+				1F7E8B951E6272AD0083EF52 /* SimpleDemo */,
+				1FF5ADB11E62749400E878A8 /* SimpleFlexboxDemo */,
+				48C1FC641DE45DD900660F74 /* GestureDemo */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		1F7E8BA41E6272AD0083EF52 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F7E8BBB1E6272D10083EF52 /* LaunchScreen.storyboard in Resources */,
+				1F7E8BBA1E6272D10083EF52 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1FF5ADBF1E62749400E878A8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FF5ADD91E6274B800E878A8 /* LaunchScreen.storyboard in Resources */,
+				1FF5ADD81E6274B800E878A8 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		48C1FC541DE45DB700660F74 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -291,23 +526,71 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1F72B09D1E39EFE900168FEA /* Run Script: Code Generation (Sourcery) */ = {
+		1F7E8B981E6272AD0083EF52 /* Run Script: VTree generate-message.sh */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Run Script: Code Generation (Sourcery)";
+			name = "Run Script: VTree generate-message.sh";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "./Scripts/make-playground.sh";
+			shellScript = "./Carthage/Checkouts/VTree/Scripts/generate-message.sh \\\n    ./Demo/SimpleDemo \\\n    ./Demo/SimpleDemo/CodeGenerated/";
+		};
+		1FF5ADB41E62749400E878A8 /* Run Script: VTree generate-message.sh */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script: VTree generate-message.sh";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Carthage/Checkouts/VTree/Scripts/generate-message.sh \\\n    ./Demo/SimpleFlexboxDemo \\\n    ./Demo/SimpleFlexboxDemo/CodeGenerated/";
+		};
+		1FFE73771E59CF1800F751A3 /* Run Script: VTree generate-message.sh */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script: VTree generate-message.sh";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Carthage/Checkouts/VTree/Scripts/generate-message.sh \\\n    ./Demo/GestureDemo \\\n    ./Demo/GestureDemo/CodeGenerated/";
 		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		1F7E8B991E6272AD0083EF52 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FF5ADAF1E62737D00E878A8 /* Message.generated.swift in Sources */,
+				1FF5ADB01E62737D00E878A8 /* MessageContext.generated.swift in Sources */,
+				1F7E8BB91E6272D10083EF52 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1FF5ADB51E62749400E878A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FF5ADD71E6274B800E878A8 /* AppDelegate.swift in Sources */,
+				1FF5ADDA1E6274B800E878A8 /* Message.generated.swift in Sources */,
+				1FF5ADDB1E6274B800E878A8 /* MessageContext.generated.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		48C1FC511DE45DB700660F74 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -321,17 +604,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FFE737B1E59CFB900F751A3 /* Message.generated.swift in Sources */,
+				1FFE737C1E59CFB900F751A3 /* MessageContext.generated.swift in Sources */,
 				48C1FC681DE45DD900660F74 /* AppDelegate.swift in Sources */,
+				1F42668E1E626EA6003B739E /* Gesture+Debug.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		1F72B09C1E39EFE600168FEA /* PBXTargetDependency */ = {
+		1F7E8B961E6272AD0083EF52 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 48C1FC551DE45DB700660F74 /* SwiftElm */;
-			targetProxy = 1F72B09B1E39EFE600168FEA /* PBXContainerItemProxy */;
+			targetProxy = 1F7E8B971E6272AD0083EF52 /* PBXContainerItemProxy */;
+		};
+		1FF5ADB21E62749400E878A8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 48C1FC551DE45DB700660F74 /* SwiftElm */;
+			targetProxy = 1FF5ADB31E62749400E878A8 /* PBXContainerItemProxy */;
 		};
 		48C1FC921DE460AC00660F74 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -341,6 +632,22 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		1F7E8BB61E6272D10083EF52 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1F7E8BB71E6272D10083EF52 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		1FF5ADD11E6274B800E878A8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1FF5ADD21E6274B800E878A8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
 		48C1FC701DE45DD900660F74 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -352,17 +659,59 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		1F72B0991E39EFC700168FEA /* Debug */ = {
+		1F7E8BAF1E6272AD0083EF52 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = UMBZ5WL247;
+				INFOPLIST_FILE = "$(SRCROOT)/Demo/SimpleDemo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.inamiy.SimpleDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0.1;
 			};
 			name = Debug;
 		};
-		1F72B09A1E39EFC700168FEA /* Release */ = {
+		1F7E8BB01E6272AD0083EF52 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = UMBZ5WL247;
+				INFOPLIST_FILE = "$(SRCROOT)/Demo/SimpleDemo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.inamiy.SimpleDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0.1;
+			};
+			name = Release;
+		};
+		1FF5ADCA1E62749400E878A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = UMBZ5WL247;
+				INFOPLIST_FILE = "$(SRCROOT)/Demo/SimpleFlexboxDemo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.inamiy.SimpleDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0.1;
+			};
+			name = Debug;
+		};
+		1FF5ADCB1E62749400E878A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = UMBZ5WL247;
+				INFOPLIST_FILE = "$(SRCROOT)/Demo/SimpleFlexboxDemo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.inamiy.SimpleDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0.1;
 			};
 			name = Release;
 		};
@@ -384,6 +733,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -437,6 +787,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -512,9 +863,9 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = UMBZ5WL247;
-				INFOPLIST_FILE = Demo/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Demo/GestureDemo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.inamiy.SwiftElmDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.inamiy.GestureDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0.1;
 			};
@@ -526,9 +877,9 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = UMBZ5WL247;
-				INFOPLIST_FILE = Demo/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Demo/GestureDemo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.inamiy.SwiftElmDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.inamiy.GestureDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0.1;
 			};
@@ -537,11 +888,20 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1F72B0981E39EFC700168FEA /* Build configuration list for PBXAggregateTarget "MakePlayground" */ = {
+		1F7E8BAE1E6272AD0083EF52 /* Build configuration list for PBXNativeTarget "SimpleDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1F72B0991E39EFC700168FEA /* Debug */,
-				1F72B09A1E39EFC700168FEA /* Release */,
+				1F7E8BAF1E6272AD0083EF52 /* Debug */,
+				1F7E8BB01E6272AD0083EF52 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1FF5ADC91E62749400E878A8 /* Build configuration list for PBXNativeTarget "SimpleFlexboxDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1FF5ADCA1E62749400E878A8 /* Debug */,
+				1FF5ADCB1E62749400E878A8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -564,7 +924,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		48C1FC741DE45DD900660F74 /* Build configuration list for PBXNativeTarget "SwiftElmDemo" */ = {
+		48C1FC741DE45DD900660F74 /* Build configuration list for PBXNativeTarget "GestureDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				48C1FC751DE45DD900660F74 /* Debug */,

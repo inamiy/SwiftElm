@@ -40,34 +40,41 @@ public final class Program<Model, Msg: Message>
         self._rootView = MutableProperty(rootView)
         self.rootViewController.view.addSubview(rootView)
 
-        let updatedSignal = self._automaton.replies
-            .observe(on: self._diffScheduler)
-            .withLatest(from: self._rootView.producer)
-            .flatMap(.merge) { reply, rootView -> SignalProducer<(Reply<Model, Msg>, UIView), NoError> in
-                /// Early exit if `rootView` is nil.
-                guard let rootView = rootView else {
-                    return .empty
-                }
-                return .init(value: (reply, rootView))
-            }
-            .withLatest(from: self._tree.producer)
-            .flatMap(.merge) { result, oldTree -> SignalProducer<(rootView: UIView, new: T, patch: Patch<Msg>), NoError> in
-                let (reply, rootView) = result
+        let treesSignal = self._automaton.replies
+            .flatMap(.merge) { reply -> SignalProducer<T, NoError> in
+                /// Early exit if transition failed.
                 guard let newState = reply.toState else {
                     return .empty
                 }
+
+                // NOTE:
+                // `newTree` needs be created and stored **synchronously** so that
+                // every diffing will be possible even when `replies` values are rapidly sent.
                 let newTree = view(newState)
+                return .init(value: newTree)
+            }
+            .withLatest(from: self._tree.producer)
+
+        let newRootViewProducer = treesSignal
+            .observe(on: self._diffScheduler)
+            .flatMap(.merge) { newTree, oldTree -> SignalProducer<Patch<Msg>, NoError> in
                 let patch = diff(old: oldTree, new: newTree)
-                return .init(value: (rootView, newTree, patch))
+                return .init(value: patch)
             }
             .observe(on: QueueScheduler.main)
-            .flatMap(.merge) { rootView, newTree, patch -> SignalProducer<(AnyVTree<Msg>, UIView?), NoError> in
+            .withLatest(from: self._rootView.producer)
+            .flatMap(.merge) { patch, rootView -> SignalProducer<UIView?, NoError> in
+                /// Early exit if `rootView` is nil.
+                guard let rootView = rootView else {
+                    return .init(value: nil)
+                }
+
                 let newView = apply(patch: patch, to: rootView)
-                return .init(value: (*newTree, newView))
+                return .init(value: newView)
             }
 
-        self._tree <~ updatedSignal.map { $0.0 }
-        self._rootView <~ updatedSignal.map { $0.1 }
+        self._tree <~ treesSignal.map { AnyVTree($0.0) }
+        self._rootView <~ newRootViewProducer
 
         // Handle messages sent from `VTree`.
         Messenger.shared.handler = { anyMsg in

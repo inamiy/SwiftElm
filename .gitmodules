@@ -10,3 +10,6 @@
 [submodule "Carthage/Checkouts/VTree"]
 	path = Carthage/Checkouts/VTree
 	url = https://github.com/inamiy/VTree.git
+[submodule "Carthage/Checkouts/Flexbox"]
+	path = Carthage/Checkouts/Flexbox
+	url = https://github.com/inamiy/Flexbox.git

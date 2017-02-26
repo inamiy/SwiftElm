@@ -8,6 +8,9 @@
          location = "group:Carthage/Checkouts/VTree/VTree.xcodeproj">
       </FileRef>
       <FileRef
+         location = "group:Carthage/Checkouts/Flexbox/Flexbox.xcodeproj">
+      </FileRef>
+      <FileRef
          location = "group:Carthage/Checkouts/ReactiveAutomaton/ReactiveAutomaton.xcodeproj">
       </FileRef>
       <FileRef
