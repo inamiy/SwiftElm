@@ -6,8 +6,6 @@
 
 ## Example
 
-All your `AppDelegate` are belong to Elm.
-
 ```swift
 import UIKit
 import VTree
@@ -31,7 +29,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate
     }
 }
 
-enum Msg: String, Message {
+enum Msg: AutoMessage {
     case increment
     case decrement
 }
@@ -56,7 +54,13 @@ func view(_ model: Model) -> VView<Msg> {
 }
 ```
 
-Please see [Demo/AppDelegate.swift](Demo/AppDelegate.swift) for more information.
+Please see [Demo Projects](Demo) for more information.
+
+## Metaprogramming with [Sourcery](https://github.com/krzysztofzablocki/Sourcery)
+
+SwiftElm uses [Sourcery](https://github.com/krzysztofzablocki/Sourcery) as Swift template metaprogramming engine to cover transcripting that [elm-lang/core](https://github.com/elm-lang/core) does when converting `enum MyMsg` to JavaScript.
+
+Please see [VTree/README.md](https://github.com/inamiy/VTree/blob/master/README.md#metaprogramming-with-sourcery) for more information.
 
 ## Acknowledgement
 
