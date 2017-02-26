@@ -6,6 +6,21 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		1FB880D91E62DE42004DDF55 /* MakePlayground */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 1FB880DC1E62DE42004DDF55 /* Build configuration list for PBXAggregateTarget "MakePlayground" */;
+			buildPhases = (
+				1FB880DF1E62DE64004DDF55 /* Run Script: Code Generation (Sourcery) */,
+			);
+			dependencies = (
+				1FB880DE1E62DE62004DDF55 /* PBXTargetDependency */,
+			);
+			name = MakePlayground;
+			productName = MakePlayground;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		1F2AE8611DF84E3800C8FE71 /* VTree.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FBFDA8D1DE5288900094059 /* VTree.framework */; };
 		1F2AE8631DF84E7200C8FE71 /* VTree.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FBFDA8D1DE5288900094059 /* VTree.framework */; };
@@ -68,6 +83,13 @@
 
 /* Begin PBXContainerItemProxy section */
 		1F7E8B971E6272AD0083EF52 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 48C1FC4D1DE45DB700660F74 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 48C1FC551DE45DB700660F74;
+			remoteInfo = SwiftElm;
+		};
+		1FB880DD1E62DE62004DDF55 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 48C1FC4D1DE45DB700660F74 /* Project object */;
 			proxyType = 1;
@@ -451,6 +473,10 @@
 					1F7E8B951E6272AD0083EF52 = {
 						DevelopmentTeam = UMBZ5WL247;
 					};
+					1FB880D91E62DE42004DDF55 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
 					1FF5ADB11E62749400E878A8 = {
 						DevelopmentTeam = UMBZ5WL247;
 					};
@@ -484,6 +510,7 @@
 				1F7E8B951E6272AD0083EF52 /* SimpleDemo */,
 				1FF5ADB11E62749400E878A8 /* SimpleFlexboxDemo */,
 				48C1FC641DE45DD900660F74 /* GestureDemo */,
+				1FB880D91E62DE42004DDF55 /* MakePlayground */,
 			);
 		};
 /* End PBXProject section */
@@ -539,6 +566,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "./Carthage/Checkouts/VTree/Scripts/generate-message.sh \\\n    ./Demo/SimpleDemo \\\n    ./Demo/SimpleDemo/CodeGenerated/";
+		};
+		1FB880DF1E62DE64004DDF55 /* Run Script: Code Generation (Sourcery) */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script: Code Generation (Sourcery)";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Scripts/make-playground.sh";
 		};
 		1FF5ADB41E62749400E878A8 /* Run Script: VTree generate-message.sh */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -619,6 +660,11 @@
 			target = 48C1FC551DE45DB700660F74 /* SwiftElm */;
 			targetProxy = 1F7E8B971E6272AD0083EF52 /* PBXContainerItemProxy */;
 		};
+		1FB880DE1E62DE62004DDF55 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 48C1FC551DE45DB700660F74 /* SwiftElm */;
+			targetProxy = 1FB880DD1E62DE62004DDF55 /* PBXContainerItemProxy */;
+		};
 		1FF5ADB21E62749400E878A8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 48C1FC551DE45DB700660F74 /* SwiftElm */;
@@ -684,6 +730,20 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.inamiy.SimpleDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0.1;
+			};
+			name = Release;
+		};
+		1FB880DA1E62DE42004DDF55 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1FB880DB1E62DE42004DDF55 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
@@ -896,6 +956,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		1FB880DC1E62DE42004DDF55 /* Build configuration list for PBXAggregateTarget "MakePlayground" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1FB880DA1E62DE42004DDF55 /* Debug */,
+				1FB880DB1E62DE42004DDF55 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 		1FF5ADC91E62749400E878A8 /* Build configuration list for PBXNativeTarget "SimpleFlexboxDemo" */ = {
 			isa = XCConfigurationList;

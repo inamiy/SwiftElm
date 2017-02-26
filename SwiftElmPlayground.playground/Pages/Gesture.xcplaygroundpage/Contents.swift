@@ -1,41 +1,13 @@
 import UIKit
+import PlaygroundSupport
+import Result
+import ReactiveSwift
 import VTree
 import SwiftElm
 
-@UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate
-{
-    var window: UIWindow?
-    var program: Program<Model, Msg>?
-
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool
-    {
-        let model = Model(message: "Initial", cursor: nil)
-
-        let program = Program(initial: (model, .empty), update: update, view: view)
-        self.program = program
-
-        self.window = UIWindow()
-        self.window?.rootViewController = self.program?.rootViewController
-        self.window?.makeKeyAndVisible()
-
-        return true
-    }
-}
-
-public enum Msg: AutoMessage
-{
-    case tap(GestureContext)
-    case pan(PanGestureContext)
-    case longPress(GestureContext)
-    case swipe(GestureContext)
-    case pinch(PinchGestureContext)
-    case rotation(RotationGestureContext)
-}
-
 struct Model
 {
-    let rootSize = UIScreen.main.bounds.size
+    let rootSize = CGSize(width: 320, height: 480)
     let message: String
     let cursor: Cursor?
 
@@ -134,3 +106,15 @@ func view(model: Model) -> VView<Msg>
         model.cursor.map(cursorView).map(*)
     ])
 }
+
+// MARK: Main
+
+let model = Model(message: "Initial", cursor: nil)
+
+let rootView = UIView(frame: CGRect(origin: .zero, size: model.rootSize))
+rootView.backgroundColor = .white
+
+let program = Program(initial: (model, .empty), update: update, view: view)
+rootView.addSubview(program.rootViewController.view)
+
+PlaygroundPage.current.liveView = rootView
