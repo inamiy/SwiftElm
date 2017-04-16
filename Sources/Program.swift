@@ -7,25 +7,23 @@ import VTree
 /// Wrapper of `VTree`, `Automaton`, and Reactive renderer.
 public final class Program<Model, Msg: Message>
 {
-    private typealias _Automaton = ReactiveAutomaton.Automaton<Model, Msg>
-
     public let rootViewController = UIViewController()
 
     private let _diffScheduler = QueueScheduler(qos: .userInteractive, name: "com.inamiy.SwiftElm.diffScheduler")
 
-    private let _automaton: _Automaton
+    private let _automaton: Automaton<Model, Msg>
     private let _rootView: MutableProperty<UIView?>
     private let _tree: MutableProperty<AnyVTree<Msg>>
 
     /// Beginner Program.
-    public convenience init<T: VTree>(model: Model, update: @escaping _Automaton.Mapping, view: @escaping (Model) -> T)
+    public convenience init<T: VTree>(model: Model, update: @escaping Automaton<Model, Msg>.Mapping, view: @escaping (Model) -> T)
         where T.MsgType == Msg
     {
         self.init(initial: (model, .empty), update: _compose(_toNextMapping, update), view: view)
     }
 
     /// Non-beginner Program.
-    public init<T: VTree>(initial: (Model, Effect<Msg>), update: @escaping _Automaton.NextMapping, view: @escaping (Model) -> T)
+    public init<T: VTree>(initial: (Model, Effect<Msg>), update: @escaping Automaton<Model, Msg>.NextMapping, view: @escaping (Model) -> T)
         where T.MsgType == Msg
     {
         let (inputSignal, inputObserver) = Signal<Msg, NoError>.pipe()
