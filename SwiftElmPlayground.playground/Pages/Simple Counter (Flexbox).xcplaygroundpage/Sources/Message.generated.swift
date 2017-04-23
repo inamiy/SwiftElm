@@ -5,9 +5,9 @@ import VTree
 
 extension Msg: Message
 {
-    public init?(rawValue: RawMessage)
+    public init?(rawMessage: RawMessage)
     {
-        switch rawValue.funcName {
+        switch rawMessage.funcName {
 
             case "increment":
                 self = .increment
@@ -20,7 +20,7 @@ extension Msg: Message
         }
     }
 
-    public var rawValue: RawMessage
+    public var rawMessage: RawMessage
     {
         switch self {
 

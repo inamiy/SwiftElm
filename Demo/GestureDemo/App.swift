@@ -1,23 +1,33 @@
 import UIKit
-import PlaygroundSupport
-import Result
-import ReactiveSwift
 import VTree
-import VTreeDebugger
-import SwiftElm
+import Flexbox
 
-struct Model: DebuggableModel
+/// Complex `Message` type that has associated values.
+/// - Important: See `VTree.Message` comment documentation for more detail.
+enum Msg: AutoMessage
+{
+    case increment
+    case decrement
+    case tap(GestureContext)
+    case pan(PanGestureContext)
+    case longPress(GestureContext)
+    case swipe(GestureContext)
+    case pinch(PinchGestureContext)
+    case rotation(RotationGestureContext)
+
+    case dummy(DummyContext)
+}
+
+/// Custom `MessageContext` that is recognizable in Sourcery.
+struct DummyContext: AutoMessageContext {}
+
+struct Model
 {
     static let initial = Model(message: "Initial", cursor: nil)
 
-    let rootSize = CGSize(width: 320, height: 480)
+    let rootSize = UIScreen.main.bounds.size
     let message: String
     let cursor: Cursor?
-
-    var description: String
-    {
-        return message
-    }
 
     struct Cursor
     {
@@ -76,6 +86,7 @@ func view(model: Model) -> VView<Msg>
     func label(_ message: String) -> VLabel<Msg>
     {
         return VLabel(
+            key: key("label"),
             frame: CGRect(x: 0, y: 40, width: rootWidth, height: 300),
             backgroundColor: .clear,
             text: message,
@@ -87,6 +98,7 @@ func view(model: Model) -> VView<Msg>
     func noteLabel() -> VLabel<Msg>
     {
         return VLabel(
+            key: key("noteLabel"),
             frame: CGRect(x: 0, y: 350, width: rootWidth, height: 80),
             backgroundColor: .clear,
             text: "Tap anywhere to test gesture.",
@@ -110,14 +122,3 @@ func view(model: Model) -> VView<Msg>
         model.cursor.map(cursorView).map(*)
     ])
 }
-
-// MARK: Main
-
-let rootView = UIView(frame: CGRect(origin: .zero, size: Model.initial.rootSize))
-rootView.backgroundColor = .white
-
-//let program = Program(model: .initial, update: update, view: view)
-let program = Program(model: DebugModel(.initial), update: debugUpdate(update), view: debugView(view))
-rootView.addSubview(program.rootViewController.view)
-
-PlaygroundPage.current.liveView = rootView

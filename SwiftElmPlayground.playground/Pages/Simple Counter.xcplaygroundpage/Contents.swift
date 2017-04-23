@@ -5,11 +5,13 @@ import SwiftElm
 
 struct Model
 {
+    static let initial = Model(count: 0)
+
     let rootSize = CGSize(width: 320, height: 480)
     let count: Int
 }
 
-func update(_ model: Model, _ msg: Msg) -> Model
+func update(_ model: Model, _ msg: Msg) -> Model?
 {
     switch msg {
         case .increment:
@@ -80,12 +82,10 @@ func view(model: Model) -> VView<Msg>
 
 // MARK: Main
 
-let model = Model(count: 0)
-
-let rootView = UIView(frame: CGRect(origin: .zero, size: model.rootSize))
+let rootView = UIView(frame: CGRect(origin: .zero, size: Model.initial.rootSize))
 rootView.backgroundColor = .white
 
-let program = Program(model: model, update: update, view: view)
+let program = Program(model: .initial, update: update, view: view)
 rootView.addSubview(program.rootViewController.view)
 
 PlaygroundPage.current.liveView = rootView

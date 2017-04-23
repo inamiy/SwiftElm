@@ -14,6 +14,7 @@
 				1FB880DF1E62DE64004DDF55 /* Run Script: Code Generation (Sourcery) */,
 			);
 			dependencies = (
+				1F9729201EACF62D002CF76A /* PBXTargetDependency */,
 				1FB880DE1E62DE62004DDF55 /* PBXTargetDependency */,
 			);
 			name = MakePlayground;
@@ -48,25 +49,15 @@
 		1FCE01EB1DF8509500B3B30E /* ReactiveSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FCE01EA1DF8509500B3B30E /* ReactiveSwift.framework */; };
 		1FCE01ED1DF8509900B3B30E /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FCE01EC1DF8509900B3B30E /* Result.framework */; };
 		1FCE01EF1DF850E100B3B30E /* ReactiveSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FCE01EA1DF8509500B3B30E /* ReactiveSwift.framework */; };
+		1FD4E3B21EACED4700618F78 /* VTreeDebugger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FD4E3B11EACED4700618F78 /* VTreeDebugger.framework */; };
+		1FD4E3B31EACED4700618F78 /* VTreeDebugger.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1FD4E3B11EACED4700618F78 /* VTreeDebugger.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1FD4E3B61EACED6900618F78 /* VTreeDebugger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FD4E3B11EACED4700618F78 /* VTreeDebugger.framework */; };
+		1FD4E3B71EACED6900618F78 /* VTreeDebugger.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1FD4E3B11EACED4700618F78 /* VTreeDebugger.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1FD4E3C11EACEFB300618F78 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD4E3C01EACEFB300618F78 /* App.swift */; };
+		1FD4E3C41EACF0F200618F78 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD4E3C21EACF09500618F78 /* App.swift */; };
 		1FF487761E3A07C4006D0383 /* Effect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF487751E3A07C4006D0383 /* Effect.swift */; };
 		1FF5ADAF1E62737D00E878A8 /* Message.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF5ADAD1E62737D00E878A8 /* Message.generated.swift */; };
 		1FF5ADB01E62737D00E878A8 /* MessageContext.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF5ADAE1E62737D00E878A8 /* MessageContext.generated.swift */; };
-		1FF5ADBA1E62749400E878A8 /* VTree.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FBFDA8D1DE5288900094059 /* VTree.framework */; };
-		1FF5ADBB1E62749400E878A8 /* SwiftElm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48C1FC561DE45DB700660F74 /* SwiftElm.framework */; };
-		1FF5ADBC1E62749400E878A8 /* ReactiveSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FCE01EA1DF8509500B3B30E /* ReactiveSwift.framework */; };
-		1FF5ADBD1E62749400E878A8 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FCE01EC1DF8509900B3B30E /* Result.framework */; };
-		1FF5ADBE1E62749400E878A8 /* ReactiveAutomaton.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FBFDA8A1DE5288200094059 /* ReactiveAutomaton.framework */; };
-		1FF5ADC31E62749400E878A8 /* ReactiveAutomaton.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1FBFDA8A1DE5288200094059 /* ReactiveAutomaton.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		1FF5ADC41E62749400E878A8 /* SwiftElm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 48C1FC561DE45DB700660F74 /* SwiftElm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		1FF5ADC51E62749400E878A8 /* ReactiveSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1FCE01EA1DF8509500B3B30E /* ReactiveSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		1FF5ADC61E62749400E878A8 /* Result.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1FCE01EC1DF8509900B3B30E /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		1FF5ADC71E62749400E878A8 /* VTree.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1FBFDA8D1DE5288900094059 /* VTree.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		1FF5ADC81E62749400E878A8 /* Flexbox.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1FFE736D1E59CDEA00F751A3 /* Flexbox.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		1FF5ADD71E6274B800E878A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF5ADCF1E6274B800E878A8 /* AppDelegate.swift */; };
-		1FF5ADD81E6274B800E878A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FF5ADD01E6274B800E878A8 /* Assets.xcassets */; };
-		1FF5ADD91E6274B800E878A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FF5ADD11E6274B800E878A8 /* LaunchScreen.storyboard */; };
-		1FF5ADDA1E6274B800E878A8 /* Message.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF5ADD41E6274B800E878A8 /* Message.generated.swift */; };
-		1FF5ADDB1E6274B800E878A8 /* MessageContext.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF5ADD51E6274B800E878A8 /* MessageContext.generated.swift */; };
 		1FFE736E1E59CDEA00F751A3 /* Flexbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FFE736D1E59CDEA00F751A3 /* Flexbox.framework */; };
 		1FFE73741E59CE5200F751A3 /* ReactiveSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1FCE01EA1DF8509500B3B30E /* ReactiveSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1FFE73761E59CEB300F751A3 /* Flexbox.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1FFE736D1E59CDEA00F751A3 /* Flexbox.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -89,14 +80,14 @@
 			remoteGlobalIDString = 48C1FC551DE45DB700660F74;
 			remoteInfo = SwiftElm;
 		};
-		1FB880DD1E62DE62004DDF55 /* PBXContainerItemProxy */ = {
+		1F97291F1EACF62D002CF76A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 48C1FC4D1DE45DB700660F74 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 48C1FC551DE45DB700660F74;
-			remoteInfo = SwiftElm;
+			remoteGlobalIDString = 48C1FC641DE45DD900660F74;
+			remoteInfo = GestureDemo;
 		};
-		1FF5ADB31E62749400E878A8 /* PBXContainerItemProxy */ = {
+		1FB880DD1E62DE62004DDF55 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 48C1FC4D1DE45DB700660F74 /* Project object */;
 			proxyType = 1;
@@ -124,23 +115,8 @@
 				1F7E8BAA1E6272AD0083EF52 /* ReactiveSwift.framework in Embed Frameworks */,
 				1F7E8BAB1E6272AD0083EF52 /* Result.framework in Embed Frameworks */,
 				1F7E8BAC1E6272AD0083EF52 /* VTree.framework in Embed Frameworks */,
+				1FD4E3B31EACED4700618F78 /* VTreeDebugger.framework in Embed Frameworks */,
 				1F7E8BAD1E6272AD0083EF52 /* Flexbox.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1FF5ADC21E62749400E878A8 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				1FF5ADC31E62749400E878A8 /* ReactiveAutomaton.framework in Embed Frameworks */,
-				1FF5ADC41E62749400E878A8 /* SwiftElm.framework in Embed Frameworks */,
-				1FF5ADC51E62749400E878A8 /* ReactiveSwift.framework in Embed Frameworks */,
-				1FF5ADC61E62749400E878A8 /* Result.framework in Embed Frameworks */,
-				1FF5ADC71E62749400E878A8 /* VTree.framework in Embed Frameworks */,
-				1FF5ADC81E62749400E878A8 /* Flexbox.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -151,6 +127,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				1FD4E3B71EACED6900618F78 /* VTreeDebugger.framework in Embed Frameworks */,
 				1FBFDA8C1DE5288200094059 /* ReactiveAutomaton.framework in Embed Frameworks */,
 				48C1FC901DE460AC00660F74 /* SwiftElm.framework in Embed Frameworks */,
 				1FFE73741E59CE5200F751A3 /* ReactiveSwift.framework in Embed Frameworks */,
@@ -174,16 +151,12 @@
 		1FBFDA8D1DE5288900094059 /* VTree.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = VTree.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FCE01EA1DF8509500B3B30E /* ReactiveSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ReactiveSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FCE01EC1DF8509900B3B30E /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Result.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FD4E3B11EACED4700618F78 /* VTreeDebugger.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = VTreeDebugger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FD4E3C01EACEFB300618F78 /* App.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
+		1FD4E3C21EACF09500618F78 /* App.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 		1FF487751E3A07C4006D0383 /* Effect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Effect.swift; sourceTree = "<group>"; };
 		1FF5ADAD1E62737D00E878A8 /* Message.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.generated.swift; sourceTree = "<group>"; };
 		1FF5ADAE1E62737D00E878A8 /* MessageContext.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageContext.generated.swift; sourceTree = "<group>"; };
-		1FF5ADCC1E62749400E878A8 /* SimpleFlexboxDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleFlexboxDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		1FF5ADCF1E6274B800E878A8 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1FF5ADD01E6274B800E878A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		1FF5ADD21E6274B800E878A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		1FF5ADD41E6274B800E878A8 /* Message.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.generated.swift; sourceTree = "<group>"; };
-		1FF5ADD51E6274B800E878A8 /* MessageContext.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageContext.generated.swift; sourceTree = "<group>"; };
-		1FF5ADD61E6274B800E878A8 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1FFE736D1E59CDEA00F751A3 /* Flexbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Flexbox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FFE73791E59CFB900F751A3 /* Message.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.generated.swift; sourceTree = "<group>"; };
 		1FFE737A1E59CFB900F751A3 /* MessageContext.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageContext.generated.swift; sourceTree = "<group>"; };
@@ -203,23 +176,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FD4E3B21EACED4700618F78 /* VTreeDebugger.framework in Frameworks */,
 				1F7E8B9F1E6272AD0083EF52 /* VTree.framework in Frameworks */,
 				1F7E8BA01E6272AD0083EF52 /* SwiftElm.framework in Frameworks */,
 				1F7E8BA11E6272AD0083EF52 /* ReactiveSwift.framework in Frameworks */,
 				1F7E8BA21E6272AD0083EF52 /* Result.framework in Frameworks */,
 				1F7E8BA31E6272AD0083EF52 /* ReactiveAutomaton.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1FF5ADB91E62749400E878A8 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1FF5ADBA1E62749400E878A8 /* VTree.framework in Frameworks */,
-				1FF5ADBB1E62749400E878A8 /* SwiftElm.framework in Frameworks */,
-				1FF5ADBC1E62749400E878A8 /* ReactiveSwift.framework in Frameworks */,
-				1FF5ADBD1E62749400E878A8 /* Result.framework in Frameworks */,
-				1FF5ADBE1E62749400E878A8 /* ReactiveAutomaton.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,6 +201,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FD4E3B61EACED6900618F78 /* VTreeDebugger.framework in Frameworks */,
 				1F2AE8631DF84E7200C8FE71 /* VTree.framework in Frameworks */,
 				48C1FC8F1DE460AC00660F74 /* SwiftElm.framework in Frameworks */,
 				1FCE01EF1DF850E100B3B30E /* ReactiveSwift.framework in Frameworks */,
@@ -254,7 +217,6 @@
 			isa = PBXGroup;
 			children = (
 				1F7E8BB31E6272D10083EF52 /* SimpleDemo */,
-				1FF5ADCE1E6274B800E878A8 /* SimpleFlexboxDemo */,
 				48C1FC661DE45DD900660F74 /* GestureDemo */,
 			);
 			path = Demo;
@@ -265,6 +227,7 @@
 			children = (
 				1FF5ADAC1E62737D00E878A8 /* CodeGenerated */,
 				1F7E8BB41E6272D10083EF52 /* AppDelegate.swift */,
+				1FD4E3C01EACEFB300618F78 /* App.swift */,
 				1F7E8BB51E6272D10083EF52 /* Assets.xcassets */,
 				1F7E8BB61E6272D10083EF52 /* LaunchScreen.storyboard */,
 				1F7E8BB81E6272D10083EF52 /* Info.plist */,
@@ -277,27 +240,6 @@
 			children = (
 				1FF5ADAD1E62737D00E878A8 /* Message.generated.swift */,
 				1FF5ADAE1E62737D00E878A8 /* MessageContext.generated.swift */,
-			);
-			path = CodeGenerated;
-			sourceTree = "<group>";
-		};
-		1FF5ADCE1E6274B800E878A8 /* SimpleFlexboxDemo */ = {
-			isa = PBXGroup;
-			children = (
-				1FF5ADD31E6274B800E878A8 /* CodeGenerated */,
-				1FF5ADCF1E6274B800E878A8 /* AppDelegate.swift */,
-				1FF5ADD01E6274B800E878A8 /* Assets.xcassets */,
-				1FF5ADD11E6274B800E878A8 /* LaunchScreen.storyboard */,
-				1FF5ADD61E6274B800E878A8 /* Info.plist */,
-			);
-			path = SimpleFlexboxDemo;
-			sourceTree = "<group>";
-		};
-		1FF5ADD31E6274B800E878A8 /* CodeGenerated */ = {
-			isa = PBXGroup;
-			children = (
-				1FF5ADD41E6274B800E878A8 /* Message.generated.swift */,
-				1FF5ADD51E6274B800E878A8 /* MessageContext.generated.swift */,
 			);
 			path = CodeGenerated;
 			sourceTree = "<group>";
@@ -327,7 +269,6 @@
 				48C1FC561DE45DB700660F74 /* SwiftElm.framework */,
 				48C1FC651DE45DD900660F74 /* GestureDemo.app */,
 				1F7E8BB11E6272AD0083EF52 /* SimpleDemo.app */,
-				1FF5ADCC1E62749400E878A8 /* SimpleFlexboxDemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -348,6 +289,7 @@
 			children = (
 				1FFE73781E59CFB900F751A3 /* CodeGenerated */,
 				48C1FC671DE45DD900660F74 /* AppDelegate.swift */,
+				1FD4E3C21EACF09500618F78 /* App.swift */,
 				1F42668D1E626EA6003B739E /* Gesture+Debug.swift */,
 				48C1FC6E1DE45DD900660F74 /* Assets.xcassets */,
 				48C1FC701DE45DD900660F74 /* LaunchScreen.storyboard */,
@@ -359,6 +301,7 @@
 		48C1FC771DE45F4D00660F74 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1FD4E3B11EACED4700618F78 /* VTreeDebugger.framework */,
 				1FFE736D1E59CDEA00F751A3 /* Flexbox.framework */,
 				1FCE01EC1DF8509900B3B30E /* Result.framework */,
 				1FCE01EA1DF8509500B3B30E /* ReactiveSwift.framework */,
@@ -400,26 +343,6 @@
 			name = SimpleDemo;
 			productName = SwiftElmDemo;
 			productReference = 1F7E8BB11E6272AD0083EF52 /* SimpleDemo.app */;
-			productType = "com.apple.product-type.application";
-		};
-		1FF5ADB11E62749400E878A8 /* SimpleFlexboxDemo */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 1FF5ADC91E62749400E878A8 /* Build configuration list for PBXNativeTarget "SimpleFlexboxDemo" */;
-			buildPhases = (
-				1FF5ADB41E62749400E878A8 /* Run Script: VTree generate-message.sh */,
-				1FF5ADB51E62749400E878A8 /* Sources */,
-				1FF5ADB91E62749400E878A8 /* Frameworks */,
-				1FF5ADBF1E62749400E878A8 /* Resources */,
-				1FF5ADC21E62749400E878A8 /* Embed Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				1FF5ADB21E62749400E878A8 /* PBXTargetDependency */,
-			);
-			name = SimpleFlexboxDemo;
-			productName = SwiftElmDemo;
-			productReference = 1FF5ADCC1E62749400E878A8 /* SimpleFlexboxDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
 		48C1FC551DE45DB700660F74 /* SwiftElm */ = {
@@ -467,7 +390,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0810;
-				LastUpgradeCheck = 0820;
+				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = "Yasuhiro Inami";
 				TargetAttributes = {
 					1F7E8B951E6272AD0083EF52 = {
@@ -476,9 +399,6 @@
 					1FB880D91E62DE42004DDF55 = {
 						CreatedOnToolsVersion = 8.2.1;
 						ProvisioningStyle = Automatic;
-					};
-					1FF5ADB11E62749400E878A8 = {
-						DevelopmentTeam = UMBZ5WL247;
 					};
 					48C1FC551DE45DB700660F74 = {
 						CreatedOnToolsVersion = 8.1;
@@ -508,7 +428,6 @@
 			targets = (
 				48C1FC551DE45DB700660F74 /* SwiftElm */,
 				1F7E8B951E6272AD0083EF52 /* SimpleDemo */,
-				1FF5ADB11E62749400E878A8 /* SimpleFlexboxDemo */,
 				48C1FC641DE45DD900660F74 /* GestureDemo */,
 				1FB880D91E62DE42004DDF55 /* MakePlayground */,
 			);
@@ -522,15 +441,6 @@
 			files = (
 				1F7E8BBB1E6272D10083EF52 /* LaunchScreen.storyboard in Resources */,
 				1F7E8BBA1E6272D10083EF52 /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1FF5ADBF1E62749400E878A8 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1FF5ADD91E6274B800E878A8 /* LaunchScreen.storyboard in Resources */,
-				1FF5ADD81E6274B800E878A8 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -581,20 +491,6 @@
 			shellPath = /bin/sh;
 			shellScript = "./Scripts/make-playground.sh";
 		};
-		1FF5ADB41E62749400E878A8 /* Run Script: VTree generate-message.sh */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Run Script: VTree generate-message.sh";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "./Carthage/Checkouts/VTree/Scripts/generate-message.sh \\\n    ./Demo/SimpleFlexboxDemo \\\n    ./Demo/SimpleFlexboxDemo/CodeGenerated/";
-		};
 		1FFE73771E59CF1800F751A3 /* Run Script: VTree generate-message.sh */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -617,18 +513,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				1FF5ADAF1E62737D00E878A8 /* Message.generated.swift in Sources */,
+				1FD4E3C11EACEFB300618F78 /* App.swift in Sources */,
 				1FF5ADB01E62737D00E878A8 /* MessageContext.generated.swift in Sources */,
 				1F7E8BB91E6272D10083EF52 /* AppDelegate.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1FF5ADB51E62749400E878A8 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1FF5ADD71E6274B800E878A8 /* AppDelegate.swift in Sources */,
-				1FF5ADDA1E6274B800E878A8 /* Message.generated.swift in Sources */,
-				1FF5ADDB1E6274B800E878A8 /* MessageContext.generated.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -648,6 +535,7 @@
 				1FFE737B1E59CFB900F751A3 /* Message.generated.swift in Sources */,
 				1FFE737C1E59CFB900F751A3 /* MessageContext.generated.swift in Sources */,
 				48C1FC681DE45DD900660F74 /* AppDelegate.swift in Sources */,
+				1FD4E3C41EACF0F200618F78 /* App.swift in Sources */,
 				1F42668E1E626EA6003B739E /* Gesture+Debug.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -660,15 +548,15 @@
 			target = 48C1FC551DE45DB700660F74 /* SwiftElm */;
 			targetProxy = 1F7E8B971E6272AD0083EF52 /* PBXContainerItemProxy */;
 		};
+		1F9729201EACF62D002CF76A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 48C1FC641DE45DD900660F74 /* GestureDemo */;
+			targetProxy = 1F97291F1EACF62D002CF76A /* PBXContainerItemProxy */;
+		};
 		1FB880DE1E62DE62004DDF55 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 48C1FC551DE45DB700660F74 /* SwiftElm */;
 			targetProxy = 1FB880DD1E62DE62004DDF55 /* PBXContainerItemProxy */;
-		};
-		1FF5ADB21E62749400E878A8 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 48C1FC551DE45DB700660F74 /* SwiftElm */;
-			targetProxy = 1FF5ADB31E62749400E878A8 /* PBXContainerItemProxy */;
 		};
 		48C1FC921DE460AC00660F74 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -682,14 +570,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				1F7E8BB71E6272D10083EF52 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		1FF5ADD11E6274B800E878A8 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1FF5ADD21E6274B800E878A8 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -744,34 +624,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		1FF5ADCA1E62749400E878A8 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = UMBZ5WL247;
-				INFOPLIST_FILE = "$(SRCROOT)/Demo/SimpleFlexboxDemo/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.inamiy.SimpleDemo;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0.1;
-			};
-			name = Debug;
-		};
-		1FF5ADCB1E62749400E878A8 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = UMBZ5WL247;
-				INFOPLIST_FILE = "$(SRCROOT)/Demo/SimpleFlexboxDemo/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.inamiy.SimpleDemo;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0.1;
 			};
 			name = Release;
 		};
@@ -962,14 +814,6 @@
 			buildConfigurations = (
 				1FB880DA1E62DE42004DDF55 /* Debug */,
 				1FB880DB1E62DE42004DDF55 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-		1FF5ADC91E62749400E878A8 /* Build configuration list for PBXNativeTarget "SimpleFlexboxDemo" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				1FF5ADCA1E62749400E878A8 /* Debug */,
-				1FF5ADCB1E62749400E878A8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

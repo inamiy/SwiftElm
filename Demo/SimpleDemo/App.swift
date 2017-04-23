@@ -1,26 +1,6 @@
 import UIKit
 import VTree
 import Flexbox
-import SwiftElm
-
-@UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate
-{
-    var window: UIWindow?
-    var program: Program<Model, Msg>?
-
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool
-    {
-        let model = Model(count: 0)
-        self.program = Program(model: model, update: update, view: view)
-
-        self.window = UIWindow()
-        self.window?.rootViewController = self.program?.rootViewController
-        self.window?.makeKeyAndVisible()
-
-        return true
-    }
-}
 
 enum Msg: AutoMessage
 {
@@ -30,11 +10,13 @@ enum Msg: AutoMessage
 
 struct Model
 {
+    static let initial = Model(count: 0)
+
     let rootSize = UIScreen.main.bounds.size
     let count: Int
 }
 
-func update(_ model: Model, _ msg: Msg) -> Model
+func update(_ model: Model, _ msg: Msg) -> Model?
 {
     switch msg {
         case .increment:
@@ -71,7 +53,7 @@ func view(model: Model) -> VView<Msg>
     {
         return VLabel(
             backgroundColor: .clear,
-            text: spellOut(count),
+            text: "\(count)",
             textAlignment: .center,
             font: .systemFont(ofSize: 48),
             flexbox: Flexbox.Node(
@@ -132,18 +114,3 @@ func view(model: Model) -> VView<Msg>
         ])
     ])
 }
-
-// MARK: Private
-
-private let _spellOutFormatter: NumberFormatter = {
-    let formatter = NumberFormatter()
-    formatter.numberStyle = .spellOut
-    return formatter
-}()
-
-/// e.g. "23" becomes "twenty-three".
-public func spellOut(_ number: Int) -> String?
-{
-    return _spellOutFormatter.string(from: NSNumber(value: number))
-}
-

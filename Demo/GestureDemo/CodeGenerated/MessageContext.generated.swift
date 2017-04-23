@@ -9,3 +9,18 @@ import AppKit
 import VTree
 
 
+extension DummyContext: MessageContext
+{
+    public init?(rawArguments: [Any])
+    {
+        guard rawArguments.count == 0 else { return nil }
+
+        self = DummyContext()
+    }
+
+    public var rawArguments: [Any]
+    {
+        return []
+    }
+}
+

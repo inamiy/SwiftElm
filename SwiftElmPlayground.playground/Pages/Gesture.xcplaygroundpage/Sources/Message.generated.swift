@@ -5,14 +5,14 @@ import VTree
 
 extension Msg: Message
 {
-    public init?(rawValue: RawMessage)
+    public init?(rawMessage: RawMessage)
     {
-        switch rawValue.funcName {
+        switch rawMessage.funcName {
 
             // .tap(GestureContext)
             case "tap":
-                let arguments = rawValue.arguments
-                if let context = GestureContext(rawValue: arguments) {
+                let arguments = rawMessage.arguments
+                if let context = GestureContext(rawArguments: arguments) {
                     self = .tap(context)
                 }
                 else {
@@ -21,8 +21,8 @@ extension Msg: Message
 
             // .pan(PanGestureContext)
             case "pan":
-                let arguments = rawValue.arguments
-                if let context = PanGestureContext(rawValue: arguments) {
+                let arguments = rawMessage.arguments
+                if let context = PanGestureContext(rawArguments: arguments) {
                     self = .pan(context)
                 }
                 else {
@@ -31,8 +31,8 @@ extension Msg: Message
 
             // .longPress(GestureContext)
             case "longPress":
-                let arguments = rawValue.arguments
-                if let context = GestureContext(rawValue: arguments) {
+                let arguments = rawMessage.arguments
+                if let context = GestureContext(rawArguments: arguments) {
                     self = .longPress(context)
                 }
                 else {
@@ -41,8 +41,8 @@ extension Msg: Message
 
             // .swipe(GestureContext)
             case "swipe":
-                let arguments = rawValue.arguments
-                if let context = GestureContext(rawValue: arguments) {
+                let arguments = rawMessage.arguments
+                if let context = GestureContext(rawArguments: arguments) {
                     self = .swipe(context)
                 }
                 else {
@@ -51,8 +51,8 @@ extension Msg: Message
 
             // .pinch(PinchGestureContext)
             case "pinch":
-                let arguments = rawValue.arguments
-                if let context = PinchGestureContext(rawValue: arguments) {
+                let arguments = rawMessage.arguments
+                if let context = PinchGestureContext(rawArguments: arguments) {
                     self = .pinch(context)
                 }
                 else {
@@ -61,8 +61,8 @@ extension Msg: Message
 
             // .rotation(RotationGestureContext)
             case "rotation":
-                let arguments = rawValue.arguments
-                if let context = RotationGestureContext(rawValue: arguments) {
+                let arguments = rawMessage.arguments
+                if let context = RotationGestureContext(rawArguments: arguments) {
                     self = .rotation(context)
                 }
                 else {
@@ -74,27 +74,27 @@ extension Msg: Message
         }
     }
 
-    public var rawValue: RawMessage
+    public var rawMessage: RawMessage
     {
         switch self {
 
             case let .tap(context):
-                return RawMessage(funcName: "tap", arguments: context.rawValue)
+                return RawMessage(funcName: "tap", arguments: context.rawArguments)
 
             case let .pan(context):
-                return RawMessage(funcName: "pan", arguments: context.rawValue)
+                return RawMessage(funcName: "pan", arguments: context.rawArguments)
 
             case let .longPress(context):
-                return RawMessage(funcName: "longPress", arguments: context.rawValue)
+                return RawMessage(funcName: "longPress", arguments: context.rawArguments)
 
             case let .swipe(context):
-                return RawMessage(funcName: "swipe", arguments: context.rawValue)
+                return RawMessage(funcName: "swipe", arguments: context.rawArguments)
 
             case let .pinch(context):
-                return RawMessage(funcName: "pinch", arguments: context.rawValue)
+                return RawMessage(funcName: "pinch", arguments: context.rawArguments)
 
             case let .rotation(context):
-                return RawMessage(funcName: "rotation", arguments: context.rawValue)
+                return RawMessage(funcName: "rotation", arguments: context.rawArguments)
 
         }
     }

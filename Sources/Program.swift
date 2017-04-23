@@ -19,7 +19,7 @@ public final class Program<Model, Msg: Message>
     public convenience init<T: VTree>(model: Model, update: @escaping Automaton<Model, Msg>.Mapping, view: @escaping (Model) -> T)
         where T.MsgType == Msg
     {
-        self.init(initial: (model, .empty), update: _compose(_toEffectMapping, update), view: view)
+        self.init(initial: (model, .empty), update: toEffectMapping(update), view: view)
     }
 
     /// Non-beginner Program.
@@ -84,22 +84,5 @@ public final class Program<Model, Msg: Message>
         initialEffect.startWithValues { msg in
             inputObserver.send(value: msg)
         }
-    }
-}
-
-// MARK: Private
-
-private func _compose<A, B, C>(_ g: @escaping (B) -> C, _ f: @escaping (A) -> B) -> (A) -> C
-{
-    return { x in g(f(x)) }
-}
-
-private func _toEffectMapping<State, Input>(_ toState: State?) -> (State, SignalProducer<Input, NoError>)?
-{
-    if let toState = toState {
-        return (toState, .empty)
-    }
-    else {
-        return nil
     }
 }
