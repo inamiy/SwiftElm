@@ -10,8 +10,6 @@ enum Msg: AutoMessage
 
 struct Model
 {
-    static let initial = Model(count: 0)
-
     let rootSize = UIScreen.main.bounds.size
     let count: Int
 }
@@ -113,4 +111,16 @@ func view(model: Model) -> VView<Msg>
             *incrementButton()
         ])
     ])
+}
+
+// MARK: VTreeDebugger
+
+import VTreeDebugger
+
+extension Model: VTreeDebugger.DebuggableModel
+{
+    var description: String
+    {
+        return "\(count)"
+    }
 }

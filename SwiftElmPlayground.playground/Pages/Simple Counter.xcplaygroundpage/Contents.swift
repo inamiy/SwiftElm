@@ -5,8 +5,6 @@ import SwiftElm
 
 struct Model
 {
-    static let initial = Model(count: 0)
-
     let rootSize = CGSize(width: 320, height: 480)
     let count: Int
 }
@@ -82,10 +80,7 @@ func view(model: Model) -> VView<Msg>
 
 // MARK: Main
 
-let rootView = UIView(frame: CGRect(origin: .zero, size: Model.initial.rootSize))
-rootView.backgroundColor = .white
-
-let program = Program(model: .initial, update: update, view: view)
-rootView.addSubview(program.rootViewController.view)
-
-PlaygroundPage.current.liveView = rootView
+let initial = Model(count: 0)
+let program = Program(model: initial, update: update, view: view)
+program.window.bounds.size = initial.rootSize
+PlaygroundPage.current.liveView = program.window
