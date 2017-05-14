@@ -8,8 +8,6 @@ import SwiftElm
 
 struct Model: DebuggableModel
 {
-    static let initial = Model(message: "Initial", cursor: nil)
-
     let rootSize = CGSize(width: 320, height: 480)
     let message: String
     let cursor: Cursor?
@@ -113,11 +111,13 @@ func view(model: Model) -> VView<Msg>
 
 // MARK: Main
 
-let rootView = UIView(frame: CGRect(origin: .zero, size: Model.initial.rootSize))
-rootView.backgroundColor = .white
+let initial = Model(message: "Initial", cursor: nil)
 
-//let program = Program(model: .initial, update: update, view: view)
-let program = Program(model: DebugModel(.initial), update: debugUpdate(update), view: debugView(view))
-rootView.addSubview(program.rootViewController.view)
-
-PlaygroundPage.current.liveView = rootView
+//let program = Program(model: initial, update: update, view: view)
+let program = Program(
+    model: DebugModel(initial),
+    update: debugUpdate(update),
+    view: debugView(view)
+)
+program.window.bounds.size = initial.rootSize
+PlaygroundPage.current.liveView = program.window

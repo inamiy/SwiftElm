@@ -4,10 +4,21 @@ import ReactiveSwift
 import ReactiveAutomaton
 import VTree
 
-/// Wrapper of `VTree`, `Automaton`, and Reactive renderer.
-public final class Program<Model, Msg: Message>
+public protocol ProgramProtocol
 {
-    public let rootViewController = UIViewController()
+    var window: UIWindow { get }
+}
+
+/// Wrapper of `VTree`, `Automaton`, and Reactive renderer.
+///
+/// - Note: This class can't be `UIApplicationDelegate` because of using generics.
+///
+/// - Warning:
+/// This class must be initialized **AFTER `application(_:didFinishLaunchingWithOptions)`**
+/// to avoid [UIGestureGraphEdge Crash](https://forums.developer.apple.com/thread/61432).
+public final class Program<Model, Msg: Message>: ProgramProtocol
+{
+    public let window: UIWindow
 
     private let _diffScheduler = QueueScheduler(qos: .userInteractive, name: "com.inamiy.SwiftElm.diffScheduler")
 
@@ -36,7 +47,13 @@ public final class Program<Model, Msg: Message>
 
         let rootView = initialTree.createView()
         self._rootView = MutableProperty(rootView)
-        self.rootViewController.view.addSubview(rootView)
+
+        let rootVC = UIViewController()
+        rootVC.view.addSubview(rootView)
+
+        self.window = UIWindow()
+        self.window.rootViewController = rootVC
+        self.window.makeKeyAndVisible()
 
         let treesSignal = self._automaton.replies
             .flatMap(.merge) { reply -> SignalProducer<T, NoError> in

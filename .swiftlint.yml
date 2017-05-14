@@ -9,10 +9,9 @@ disabled_rules:
   - function_body_length
   - type_body_length
   - file_length
+  - function_parameter_count
   - cyclomatic_complexity
-
   - force_cast
-
   - opening_brace         # prefer Allman-Style
   - closing_brace         # allow `}\n)`
   - statement_position    # allow `if {}\nelse {}`
@@ -20,6 +19,7 @@ disabled_rules:
   - variable_name         # allow "_" prefix name
   - todo
   - valid_docs
+  - void_return
 
 opt_in_rules:
   - empty_count  # local variable name `count` is frequently used
@@ -32,5 +32,8 @@ included:
 excluded:
   - Carthage
   - Packages
+  - Sources/CodeGenerated
+  - Demo/SimpleDemo/CodeGenerated
+  - Demo/GestureDemo/CodeGenerated
 
 reporter: "xcode" # reporter type (xcode, json, csv, checkstyle)

@@ -23,8 +23,6 @@ struct DummyContext: AutoMessageContext {}
 
 struct Model
 {
-    static let initial = Model(message: "Initial", cursor: nil)
-
     let rootSize = UIScreen.main.bounds.size
     let message: String
     let cursor: Cursor?
@@ -121,4 +119,16 @@ func view(model: Model) -> VView<Msg>
         *noteLabel(),
         model.cursor.map(cursorView).map(*)
     ])
+}
+
+// MARK: VTreeDebugger
+
+import VTreeDebugger
+
+extension Model: VTreeDebugger.DebuggableModel
+{
+    var description: String
+    {
+        return "\(self.message)"
+    }
 }

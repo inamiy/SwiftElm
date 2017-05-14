@@ -14,8 +14,8 @@
 				1FB880DF1E62DE64004DDF55 /* Run Script: Code Generation (Sourcery) */,
 			);
 			dependencies = (
-				1F9729201EACF62D002CF76A /* PBXTargetDependency */,
 				1FB880DE1E62DE62004DDF55 /* PBXTargetDependency */,
+				1FF017511EC854500033A821 /* PBXTargetDependency */,
 			);
 			name = MakePlayground;
 			productName = MakePlayground;
@@ -40,9 +40,10 @@
 		1F7E8BAB1E6272AD0083EF52 /* Result.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1FCE01EC1DF8509900B3B30E /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1F7E8BAC1E6272AD0083EF52 /* VTree.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1FBFDA8D1DE5288900094059 /* VTree.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1F7E8BAD1E6272AD0083EF52 /* Flexbox.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1FFE736D1E59CDEA00F751A3 /* Flexbox.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		1F7E8BB91E6272D10083EF52 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7E8BB41E6272D10083EF52 /* AppDelegate.swift */; };
 		1F7E8BBA1E6272D10083EF52 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F7E8BB51E6272D10083EF52 /* Assets.xcassets */; };
 		1F7E8BBB1E6272D10083EF52 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F7E8BB61E6272D10083EF52 /* LaunchScreen.storyboard */; };
+		1F98D02B1EC79D2E0052A847 /* AppMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F98D02A1EC79D2E0052A847 /* AppMain.swift */; };
+		1F98D02D1EC7A3F00052A847 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F98D02C1EC7A3F00052A847 /* main.swift */; };
 		1FBFDA8B1DE5288200094059 /* ReactiveAutomaton.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FBFDA8A1DE5288200094059 /* ReactiveAutomaton.framework */; };
 		1FBFDA8C1DE5288200094059 /* ReactiveAutomaton.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1FBFDA8A1DE5288200094059 /* ReactiveAutomaton.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1FBFDA981DE528B200094059 /* ReactiveAutomaton.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FBFDA8A1DE5288200094059 /* ReactiveAutomaton.framework */; };
@@ -64,7 +65,7 @@
 		1FFE737B1E59CFB900F751A3 /* Message.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FFE73791E59CFB900F751A3 /* Message.generated.swift */; };
 		1FFE737C1E59CFB900F751A3 /* MessageContext.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FFE737A1E59CFB900F751A3 /* MessageContext.generated.swift */; };
 		48C1FC5B1DE45DB700660F74 /* SwiftElm.h in Headers */ = {isa = PBXBuildFile; fileRef = 48C1FC591DE45DB700660F74 /* SwiftElm.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		48C1FC681DE45DD900660F74 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C1FC671DE45DD900660F74 /* AppDelegate.swift */; };
+		48C1FC681DE45DD900660F74 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C1FC671DE45DD900660F74 /* main.swift */; };
 		48C1FC6F1DE45DD900660F74 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48C1FC6E1DE45DD900660F74 /* Assets.xcassets */; };
 		48C1FC721DE45DD900660F74 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48C1FC701DE45DD900660F74 /* LaunchScreen.storyboard */; };
 		48C1FC8F1DE460AC00660F74 /* SwiftElm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48C1FC561DE45DB700660F74 /* SwiftElm.framework */; };
@@ -80,19 +81,19 @@
 			remoteGlobalIDString = 48C1FC551DE45DB700660F74;
 			remoteInfo = SwiftElm;
 		};
-		1F97291F1EACF62D002CF76A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 48C1FC4D1DE45DB700660F74 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 48C1FC641DE45DD900660F74;
-			remoteInfo = GestureDemo;
-		};
 		1FB880DD1E62DE62004DDF55 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 48C1FC4D1DE45DB700660F74 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 48C1FC551DE45DB700660F74;
 			remoteInfo = SwiftElm;
+		};
+		1FF017501EC854500033A821 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 48C1FC4D1DE45DB700660F74 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 48C1FC641DE45DD900660F74;
+			remoteInfo = GestureDemo;
 		};
 		48C1FC911DE460AC00660F74 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -143,10 +144,11 @@
 /* Begin PBXFileReference section */
 		1F42668D1E626EA6003B739E /* Gesture+Debug.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Gesture+Debug.swift"; sourceTree = "<group>"; };
 		1F7E8BB11E6272AD0083EF52 /* SimpleDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		1F7E8BB41E6272D10083EF52 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1F7E8BB51E6272D10083EF52 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1F7E8BB71E6272D10083EF52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1F7E8BB81E6272D10083EF52 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F98D02A1EC79D2E0052A847 /* AppMain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppMain.swift; sourceTree = "<group>"; };
+		1F98D02C1EC7A3F00052A847 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		1FBFDA8A1DE5288200094059 /* ReactiveAutomaton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ReactiveAutomaton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FBFDA8D1DE5288900094059 /* VTree.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = VTree.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FCE01EA1DF8509500B3B30E /* ReactiveSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ReactiveSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -164,7 +166,7 @@
 		48C1FC591DE45DB700660F74 /* SwiftElm.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftElm.h; sourceTree = "<group>"; };
 		48C1FC5A1DE45DB700660F74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		48C1FC651DE45DD900660F74 /* GestureDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GestureDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		48C1FC671DE45DD900660F74 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		48C1FC671DE45DD900660F74 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		48C1FC6E1DE45DD900660F74 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		48C1FC711DE45DD900660F74 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		48C1FC731DE45DD900660F74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -226,7 +228,7 @@
 			isa = PBXGroup;
 			children = (
 				1FF5ADAC1E62737D00E878A8 /* CodeGenerated */,
-				1F7E8BB41E6272D10083EF52 /* AppDelegate.swift */,
+				1F98D02C1EC7A3F00052A847 /* main.swift */,
 				1FD4E3C01EACEFB300618F78 /* App.swift */,
 				1F7E8BB51E6272D10083EF52 /* Assets.xcassets */,
 				1F7E8BB61E6272D10083EF52 /* LaunchScreen.storyboard */,
@@ -277,6 +279,7 @@
 			isa = PBXGroup;
 			children = (
 				48C1FC591DE45DB700660F74 /* SwiftElm.h */,
+				1F98D02A1EC79D2E0052A847 /* AppMain.swift */,
 				48C1FC951DE4616A00660F74 /* Program.swift */,
 				1FF487751E3A07C4006D0383 /* Effect.swift */,
 				48C1FC5A1DE45DB700660F74 /* Info.plist */,
@@ -288,7 +291,7 @@
 			isa = PBXGroup;
 			children = (
 				1FFE73781E59CFB900F751A3 /* CodeGenerated */,
-				48C1FC671DE45DD900660F74 /* AppDelegate.swift */,
+				48C1FC671DE45DD900660F74 /* main.swift */,
 				1FD4E3C21EACF09500618F78 /* App.swift */,
 				1F42668D1E626EA6003B739E /* Gesture+Debug.swift */,
 				48C1FC6E1DE45DD900660F74 /* Assets.xcassets */,
@@ -513,9 +516,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				1FF5ADAF1E62737D00E878A8 /* Message.generated.swift in Sources */,
+				1F98D02D1EC7A3F00052A847 /* main.swift in Sources */,
 				1FD4E3C11EACEFB300618F78 /* App.swift in Sources */,
 				1FF5ADB01E62737D00E878A8 /* MessageContext.generated.swift in Sources */,
-				1F7E8BB91E6272D10083EF52 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -523,6 +526,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F98D02B1EC79D2E0052A847 /* AppMain.swift in Sources */,
 				1FF487761E3A07C4006D0383 /* Effect.swift in Sources */,
 				48C1FC961DE4616A00660F74 /* Program.swift in Sources */,
 			);
@@ -534,7 +538,7 @@
 			files = (
 				1FFE737B1E59CFB900F751A3 /* Message.generated.swift in Sources */,
 				1FFE737C1E59CFB900F751A3 /* MessageContext.generated.swift in Sources */,
-				48C1FC681DE45DD900660F74 /* AppDelegate.swift in Sources */,
+				48C1FC681DE45DD900660F74 /* main.swift in Sources */,
 				1FD4E3C41EACF0F200618F78 /* App.swift in Sources */,
 				1F42668E1E626EA6003B739E /* Gesture+Debug.swift in Sources */,
 			);
@@ -548,15 +552,15 @@
 			target = 48C1FC551DE45DB700660F74 /* SwiftElm */;
 			targetProxy = 1F7E8B971E6272AD0083EF52 /* PBXContainerItemProxy */;
 		};
-		1F9729201EACF62D002CF76A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 48C1FC641DE45DD900660F74 /* GestureDemo */;
-			targetProxy = 1F97291F1EACF62D002CF76A /* PBXContainerItemProxy */;
-		};
 		1FB880DE1E62DE62004DDF55 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 48C1FC551DE45DB700660F74 /* SwiftElm */;
 			targetProxy = 1FB880DD1E62DE62004DDF55 /* PBXContainerItemProxy */;
+		};
+		1FF017511EC854500033A821 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 48C1FC641DE45DD900660F74 /* GestureDemo */;
+			targetProxy = 1FF017501EC854500033A821 /* PBXContainerItemProxy */;
 		};
 		48C1FC921DE460AC00660F74 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;

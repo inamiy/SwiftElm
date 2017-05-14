@@ -7,27 +7,11 @@
 ## Example
 
 ```swift
+// main.swift
+
 import UIKit
 import VTree
 import SwiftElm
-
-@UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate
-{
-    var window: UIWindow?
-    var program: Program<Model, Msg>?
-
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool
-    {
-        self.program = Program(model: 0, update: update, view: view)
-
-        self.window = UIWindow()
-        self.window?.rootViewController = self.program?.rootViewController
-        self.window?.makeKeyAndVisible()
-
-        return true
-    }
-}
 
 enum Msg: AutoMessage {
     case increment
@@ -51,6 +35,11 @@ func view(_ model: Model) -> VView<Msg> {
         *VButton(title: "+", handlers: [.touchUpInside : .increment]),
         *VButton(title: "-", handlers: [.touchUpInside : .decrement]),
     ])
+}
+
+// App main entrypoint (using `UIApplicationMain`).
+appMain {
+    return Program(model: 0, update: update, view: view)
 }
 ```
 
