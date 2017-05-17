@@ -30,8 +30,10 @@ func view(model: Model) -> VView<Msg>
     func rootView(_ children: [AnyVTree<Msg>] = []) -> VView<Msg>
     {
         return VView(
-            frame: CGRect(x: 0, y: 0, width: rootWidth, height: rootHeight),
-            backgroundColor: .white,
+            styles: .init {
+                $0.frame = CGRect(x: 0, y: 0, width: rootWidth, height: rootHeight)
+                $0.backgroundColor = .white
+            },
             children: children
         )
     }
@@ -39,21 +41,25 @@ func view(model: Model) -> VView<Msg>
     func label(_ count: Int) -> VLabel<Msg>
     {
         return VLabel(
-            frame: CGRect(x: 0, y: 40, width: rootWidth, height: 80),
-            backgroundColor: .clear,
-            text: "\(count)",
-            textAlignment: .center,
-            font: .systemFont(ofSize: 48)
+            text: .text("\(count)"),
+            styles: .init {
+                $0.frame = CGRect(x: 0, y: 40, width: rootWidth, height: 80)
+                $0.backgroundColor = .clear
+                $0.textAlignment = .center
+                $0.font = .systemFont(ofSize: 48)
+            }
         )
     }
 
     func incrementButton() -> VButton<Msg>
     {
         return VButton(
-            frame: CGRect(x: rootWidth/2 + space/2, y: 150, width: buttonWidth, height: 50),
-            backgroundColor: #colorLiteral(red: 0.4666666687, green: 0.7647058964, blue: 0.2666666806, alpha: 1),
             title: "+",
-            font: .systemFont(ofSize: 24),
+            styles: .init {
+                $0.frame = CGRect(x: rootWidth/2 + space/2, y: 150, width: buttonWidth, height: 50)
+                $0.backgroundColor = #colorLiteral(red: 0.4666666687, green: 0.7647058964, blue: 0.2666666806, alpha: 1)
+                $0.font = .systemFont(ofSize: 24)
+            },
             handlers: [.touchUpInside: .increment]
         )
     }
@@ -61,10 +67,12 @@ func view(model: Model) -> VView<Msg>
     func decrementButton() -> VButton<Msg>
     {
         return VButton(
-            frame: CGRect(x: space, y: 150, width: buttonWidth, height: 50),
-            backgroundColor: #colorLiteral(red: 0.9372549057, green: 0.3490196168, blue: 0.1921568662, alpha: 1),
             title: "-",
-            font: .systemFont(ofSize: 24),
+            styles: .init {
+                $0.frame = CGRect(x: space, y: 150, width: buttonWidth, height: 50)
+                $0.backgroundColor = #colorLiteral(red: 0.9372549057, green: 0.3490196168, blue: 0.1921568662, alpha: 1)
+                $0.font = .systemFont(ofSize: 24)
+            },
             handlers: [.touchUpInside: .decrement]
         )
     }
