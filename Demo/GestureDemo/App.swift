@@ -74,8 +74,10 @@ func view(model: Model) -> VView<Msg>
     func rootView(_ children: [AnyVTree<Msg>?]) -> VView<Msg>
     {
         return VView(
-            frame: CGRect(x: 0, y: 0, width: rootWidth, height: rootHeight),
-            backgroundColor: .white,
+            styles: .init {
+                $0.frame = CGRect(x: 0, y: 0, width: rootWidth, height: rootHeight)
+                $0.backgroundColor = .white
+            },
             gestures: [.tap(^Msg.tap), .pan(^Msg.pan), .longPress(^Msg.longPress), .swipe(^Msg.swipe), .pinch(^Msg.pinch), .rotation(^Msg.rotation)],
             children: children.flatMap { $0 }
         )
@@ -85,11 +87,13 @@ func view(model: Model) -> VView<Msg>
     {
         return VLabel(
             key: key("label"),
-            frame: CGRect(x: 0, y: 40, width: rootWidth, height: 300),
-            backgroundColor: .clear,
-            text: message,
-            textAlignment: .center,
-            font: .systemFont(ofSize: 24)
+            text: .text(message),
+            styles: .init {
+                $0.frame = CGRect(x: 0, y: 40, width: rootWidth, height: 300)
+                $0.backgroundColor = .clear
+                $0.textAlignment = .center
+                $0.font = .systemFont(ofSize: 24)
+            }
         )
     }
 
@@ -97,11 +101,13 @@ func view(model: Model) -> VView<Msg>
     {
         return VLabel(
             key: key("noteLabel"),
-            frame: CGRect(x: 0, y: 350, width: rootWidth, height: 80),
-            backgroundColor: .clear,
             text: "Tap anywhere to test gesture.",
-            textAlignment: .center,
-            font: .systemFont(ofSize: 20)
+            styles: .init {
+                $0.frame = CGRect(x: 0, y: 350, width: rootWidth, height: 80)
+                $0.backgroundColor = .clear
+                $0.textAlignment = .center
+                $0.font = .systemFont(ofSize: 20)
+            }
         )
     }
 
@@ -109,8 +115,10 @@ func view(model: Model) -> VView<Msg>
     {
         return VView(
             key: key("cursor"),
-            frame: cursor.frame,
-            backgroundColor: cursor.backgroundColor
+            styles: .init {
+                $0.frame = cursor.frame
+                $0.backgroundColor = cursor.backgroundColor
+            }
         )
     }
 
