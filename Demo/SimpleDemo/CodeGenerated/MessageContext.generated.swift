@@ -1,4 +1,4 @@
-// Generated using Sourcery 0.5.3 — https://github.com/krzysztofzablocki/Sourcery
+// Generated using Sourcery 0.15.0 — https://github.com/krzysztofzablocki/Sourcery
 // DO NOT EDIT
 
 #if os(iOS) || os(tvOS)
@@ -7,5 +7,4 @@ import UIKit
 import AppKit
 #endif
 import VTree
-
 
